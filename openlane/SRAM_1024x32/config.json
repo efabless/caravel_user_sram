@@ -33,7 +33,7 @@
         "dir::../../ip/EFSRAM_01024x032_008_18/lef/EFSRAM_1024x32_wrapper.lef"
     ],
     "EXTRA_LIBS": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/lib/EFSRAM_01024x032_008_18_tt_180V_25C.lib"
+        "dir::../../ip/EFSRAM_01024x032_008_18/lib/EFSRAM_1024x32_wrapper_tt_180V_25C.lib"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "FP_PDN_HORIZONTAL_LAYER": "met3",
