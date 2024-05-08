@@ -1,6 +1,3 @@
-[WARNING]: Module sky130_fd_sc_hd__fill_1 blackboxed during sta
-[WARNING]: Module sky130_ef_sc_hd__decap_12 blackboxed during sta
-[WARNING]: Module sky130_fd_sc_hd__fill_2 blackboxed during sta
-[WARNING]: Module sky130_fd_sc_hd__tapvpwrvgnd_1 blackboxed during sta
-[WARNING]: VSRC_LOC_FILES is not defined. The IR drop analysis will run, but the values may be inaccurate.
-[WARNING]: There are max fanout violations in the design at the typical corner. Please refer to '../home/passant/efabless/caravel_user_project/openlane/user_project_wrapper/runs/23_07_19_18_40/reports/signoff/21-rcx_sta.checks.rpt'.
+[WARNING]: VSRC_LOC_FILES was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for VSRC_LOC_FILES.
+[WARNING]: There are violations in the design after KLayout DRC.
+[WARNING]: Total Number of violations is 1

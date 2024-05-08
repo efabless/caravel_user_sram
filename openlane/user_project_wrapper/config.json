@@ -12,7 +12,7 @@
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/hdl/SRAM_1024x32.v"
+        "dir::../../verilog/gl/SRAM_1024x32.v"
     ],
     "EXTRA_LEFS": "dir::../../lef/SRAM_1024x32.lef",
     "EXTRA_GDS_FILES": "dir::../../gds/SRAM_1024x32.gds",
@@ -28,6 +28,8 @@
     "MAX_TRANSITION_CONSTRAINT": 1.5,
     "RUN_LINTER": 0,
     "QUIT_ON_SYNTH_CHECKS": 0,
+    "QUIT_ON_MAGIC_DRC": false,
+    "QUIT_ON_KLAYOUT_DRC": false,
     "FP_PDN_CHECK_NODES": 0,
     "SYNTH_ELABORATE_ONLY": 1,
     "PL_RANDOM_GLB_PLACEMENT": 1,
@@ -46,6 +48,7 @@
     "FP_PDN_VOFFSET": 5,
     "FP_PDN_HOFFSET": 5,
     "MAGIC_ZEROIZE_ORIGIN": 0,
+    "MAGIC_DRC_USE_GDS": true,
     "FP_SIZING": "absolute",
     "RUN_CVC": 0,
     "UNIT": 2.4,
@@ -79,36 +82,7 @@
         "vssa2"
     ],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
-    "pdk::sky130*": {
-        "RT_MAX_LAYER": "met4",
-        "DIE_AREA": "0 0 2920 3520",
-        "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
-        "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 25
-        },
-        "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 10
-        },
-        "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 8
-        },
-        "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 10,
-            "SYNTH_MAX_FANOUT": 5
-        },
-        "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 10
-        }
-    },
-    "pdk::gf180mcuC": {
-        "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
-        "FP_PDN_CHECK_NODES": 0,
-        "FP_PDN_ENABLE_RAILS": 0,
-        "RT_MAX_LAYER": "Metal4",
-        "DIE_AREA": "0 0 3000 3000",
-        "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper_gf180mcu.def",
-        "PL_OPENPHYSYN_OPTIMIZATIONS": 0,
-        "DIODE_INSERTION_STRATEGY": 0,
-        "MAGIC_WRITE_FULL_LEF": 0
-    }
+    "RT_MAX_LAYER": "met4",
+    "DIE_AREA": "0 0 2920 3520",
+    "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def"
 }

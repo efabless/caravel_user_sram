@@ -1,1 +1,10 @@
 $user_project_wrapper 100
+r_0_met1.6
+500 500 2 Nov 29 03:26:39 2020
+Rule File Pathname: UNKNOWN
+met1.6: Metal1 minimum area < 0.083um^2 
+p 1 4
+2500 34800
+2500 34800
+2500 34900
+2500 34900

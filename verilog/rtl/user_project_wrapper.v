@@ -84,8 +84,8 @@ module user_project_wrapper #(
 
 SRAM_1024x32 mprj (
 `ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
+	.VPWR(vccd1),	// User area 1 1.8V power
+	.VGND(vssd1),	// User area 1 digital ground
 `endif
 
     .wb_clk_i(wb_clk_i),

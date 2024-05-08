@@ -1,10 +1,37 @@
 <?xml version="1.0" ?>
 <report-database>
-    <categories/>
+    <categories>
+        <category>
+            <name>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</name>
+        </category>
+    </categories>
     <cells>
         <cell>
             <name>user_project_wrapper</name>
         </cell>
     </cells>
-    <items/>
+    <items>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (25.160,348.805;25.420,349.065)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: ([INFO]:,Should;be,divided)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+    </items>
 </report-database>

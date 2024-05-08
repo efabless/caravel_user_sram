@@ -1,19 +1,20 @@
 Design Name: user_project_wrapper
-Run Directory: /home/passant/efabless/caravel_user_project/openlane/user_project_wrapper/runs/23_07_19_18_40
+Run Directory: /home/passant/efabless/caravel_user_sram/openlane/user_project_wrapper/runs/24_05_08_13_07
 ----------------------------------------
 
 Magic DRC Summary:
-Source: /home/passant/efabless/caravel_user_project/openlane/user_project_wrapper/runs/23_07_19_18_40/reports/signoff/drc.rpt
-Total Magic DRC violations is 0
+Source: /home/passant/efabless/caravel_user_sram/openlane/user_project_wrapper/runs/24_05_08_13_07/reports/signoff/drc.rpt
+Violation Message "Metal1 minimum area < 0.083um^2 (met1.6) "found 1 Times.
+Total Magic DRC violations is 1
 ----------------------------------------
 
 LVS Summary:
-Source: /home/passant/efabless/caravel_user_project/openlane/user_project_wrapper/runs/23_07_19_18_40/logs/signoff/29-user_project_wrapper.lef.lvs.log
-Number of nets: 543                        |Number of nets: 543                        
+Source: /home/passant/efabless/caravel_user_sram/openlane/user_project_wrapper/runs/24_05_08_13_07/logs/signoff/28-user_project_wrapper.lef.lvs.log
+Number of nets: 108                        |Number of nets: 108                        
 Design is LVS clean.
 ----------------------------------------
 
 Antenna Summary:
-Source: /home/passant/efabless/caravel_user_project/openlane/user_project_wrapper/runs/23_07_19_18_40/logs/signoff/31-arc.log
-Pin violations: 0
-Net violations: 0
+Source: /home/passant/efabless/caravel_user_sram/openlane/user_project_wrapper/runs/24_05_08_13_07/logs/signoff/31-arc.log
+Pin violations: 44
+Net violations: 44
