@@ -19,10 +19,14 @@ make setup
 ```
 3. Install IPM
 ```
-pip install efipm
+cd $HOME
+git clone https://github.com/efabless/IPM.git
+cd IPM
+pip install .
 ```
 4. Install the SRAM IP
 ```
+cd $HOME/caravel_user_sram
 ipm install-dep
 ```
 5. Harden the SRAM macro
