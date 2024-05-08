@@ -1,14 +1,35 @@
 # Caravel User Project
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+## Overview
 
-## Please fill in your project documentation in this README.md file 
+This is a simple example showcasing how to integrate the commercial SRAM in the `user_project_wrapper` using `IPM`.
 
-Refer to [README](docs/source/index.rst#section-quickstart) for a quickstart of how to use caravel_user_project
+## Quick start
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
-
-Refer to the following [readthedocs](https://caravel-sim-infrastructure.readthedocs.io/en/latest/index.html) for how to add cocotb tests to your project. 
+1. Start with cloning the repo
+```
+git clone https://github.com/efabless/caravel_user_sram.git
+```
+2. Setup your enviroment
+```
+cd caravel_user_sram
+make setup
+```
+3. Install IPM
+```
+pip install ipm
+```
+4. Install the SRAM IP
+```
+ipm install-dep
+```
+5. Harden the SRAM macro
+```
+make SRAM_1024x32
+```
+6. Harden the `user_project_wrapper`
+```
+make user_project_wrapper
+```
