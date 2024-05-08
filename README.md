@@ -19,7 +19,7 @@ make setup
 ```
 3. Install IPM
 ```
-pip install ipm
+pip install efipm
 ```
 4. Install the SRAM IP
 ```
