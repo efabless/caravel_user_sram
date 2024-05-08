@@ -1,0 +1,6 @@
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 10.100, 233.805 ) - ( 10.360, 234.065 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( [INFO]:, Should ) - ( be, divided ) on Layer met1

@@ -1,0 +1,19 @@
+Design Name: SRAM_1024x32
+Run Directory: /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_08_12_23
+----------------------------------------
+
+Magic DRC Summary:
+Source: /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_08_12_23/reports/signoff/drc.rpt
+Violation Message "Metal1 minimum area < 0.083um^2 (met1.6) "found 1 Times.
+Total Magic DRC violations is 1
+----------------------------------------
+
+LVS Summary:
+Source: /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_08_12_23/logs/signoff/SRAM_1024x32.lef.lvs.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+Source: /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_08_12_23/logs/signoff/41-arc.log
+Pin violations: 0
+Net violations: 0
