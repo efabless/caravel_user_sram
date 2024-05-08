@@ -37,6 +37,7 @@ ifeq ($(ROOTLESS), 1)
 endif
 export OPENLANE_ROOT?=$(PWD)/dependencies/openlane_src
 export PDK_ROOT?=$(PWD)/dependencies/pdks
+export IPM_ROOT?=$(PWD)/dependencies/ipm
 export DISABLE_LVS?=0
 
 export ROOTLESS
@@ -230,7 +231,17 @@ update_caravel: check-caravel
 uninstall:
 	rm -rf $(CARAVEL_ROOT)
 
+ipm: check_dependencies
+	if [ -d "$(IPM_ROOT)" ]; then\
+		echo "Deleting exisiting $(IPM_ROOT)" && \
+		rm -rf $(IPM_ROOT) && sleep 2;\
+	fi
+	git clone https://github.com/efabless/ipm.git $(IPM_ROOT)
+	cd $(IPM_ROOT)
+	pip install .
 
+ip: ipm
+	ipm install-dep
 # Install Pre-check
 # Default installs to the user home directory, override by "export PRECHECK_ROOT=<precheck-installation-path>"
 .PHONY: precheck
