@@ -3,4 +3,25 @@
     bbox = ( 10.100, 233.805 ) - ( 10.360, 234.065 ) on Layer met1
   violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
     srcs: N/A N/A
+    bbox = ( N-well, overlap ) - ( of, Deep ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 10.100, 42.595 ) - ( 11.530, 314.560 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 311.985, 42.595 ) - ( 313.415, 314.560 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 10.100, 41.165 ) - ( 313.415, 42.595 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 10.100, 425.275 ) - ( 313.415, 426.705 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 10.100, 314.560 ) - ( 11.530, 425.275 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
+    bbox = ( 311.985, 314.560 ) - ( 313.415, 425.275 ) on Layer met1
+  violation type: Metal1_minimum_area_lt_0dot083umpow2_met1dot6
+    srcs: N/A N/A
     bbox = ( [INFO]:, Should ) - ( be, divided ) on Layer met1

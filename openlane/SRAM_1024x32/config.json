@@ -7,7 +7,7 @@
         "dir::../../ip/EFSRAM_01024x032_008_18/hdl/SRAM_1024x32.v",
         "dir::../../ip/EFSRAM_01024x032_008_18/hdl/EFSRAM_1024x32_wrapper.v"
     ],
-    "VERILOG_DEFINES": ["USE_PG_PIN", "PnR"],
+    "SYNTH_DEFINES": ["PnR"],
     "ERROR_ON_LINTER_ERRORS": false,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
@@ -47,16 +47,14 @@
     "FP_PDN_HSPACING": 10,
     "FP_PDN_VPITCH": 50,
     "FP_PDN_HPITCH": 50,
-    "PDN_MACRO_CONNECTIONS": [
-        "SRAM_0 vpwra vgnd VPWR VGND",
-        "SRAM_0 vpb vnb VPWR VGND",
-        "SRAM_0 vpwrp vgnd VPWR VGND",
-        "SRAM_0 vpwrm vgnd VPWR VGND"
+    "FP_PDN_MACRO_HOOKS": [
+        "SRAM_0 VPWR VGND vpwra vgnd",
+        "SRAM_0 VPWR VGND vpb vnb",
+        "SRAM_0 VPWR VGND vpwrp vgnd",
+        "SRAM_0 VPWR VGND vpwrm vgnd"
     ],
     "FP_PDN_CFG": "dir::pdn.tcl",
-    "QUIT_ON_PDN_VIOLATIONS": false,
     "QUIT_ON_LINTER_ERRORS": false,
-    "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
     "ROUTING_OBSTRUCTIONS": [
 		"met1 0 40 314 435",
 		"met2 0 40 314 435",
@@ -64,14 +62,14 @@
 		"met4 0 40 314 435",
 		"met5 0 40 314 435"
 	],
-    "PL_TARGET_DENSITY_PCT": 15,
+    "PL_TARGET_DENSITY": 0.15,
     "PL_TIME_DRIVEN": false,
     "PL_ROUTABILITY_DRIVEN": true,
     "GRT_ALLOW_CONGESTION": true,
     "GRT_ADJUSTMENT": 0,
-    "RUN_POST_GRT_DESIGN_REPAIR": true,
-    "RUN_POST_GRT_RESIZER_TIMING": true,
-    "RUN_ANTENNA_REPAIR": false,
+    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": true,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "GRT_REPAIR_ANTENNAS": false,
     "MAGIC_DRC_USE_GDS": true,
     "QUIT_ON_MAGIC_DRC": false,
     "QUIT_ON_KLAYOUT_DRC": false,

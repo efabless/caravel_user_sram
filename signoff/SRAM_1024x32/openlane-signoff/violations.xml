@@ -884,7 +884,7 @@
    </references>
   </cell>
   <cell>
-   <name>S8TSSC_01024x032_008_18</name>
+   <name>EFSRAM_01024x032_008_18</name>
    <variant/>
    <references>
     <ref>
@@ -898,7 +898,7 @@
   <item>
    <tags/>
    <category>'m1.6'</category>
-   <cell>S8TSSC_01024x032_008_18</cell>
+   <cell>EFSRAM_01024x032_008_18</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
