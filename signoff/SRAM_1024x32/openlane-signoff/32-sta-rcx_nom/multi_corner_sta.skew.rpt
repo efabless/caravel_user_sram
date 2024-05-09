@@ -3,8 +3,8 @@
 report_clock_skew
 ============================================================================
 Clock clk
-   5.85 source latency _19_/CLK ^
-  -4.90 target latency _19_/CLK ^
+   5.87 source latency _19_/CLK ^
+  -4.92 target latency _19_/CLK ^
   -0.95 CRPR
 --------------
    0.00 setup skew

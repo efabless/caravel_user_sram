@@ -55,7 +55,7 @@
     ],
     "FP_PDN_CFG": "dir::pdn.tcl",
     "QUIT_ON_LINTER_ERRORS": false,
-    "ROUTING_OBSTRUCTIONS": [
+    "GRT_OBS": [
 		"met1 0 40 314 435",
 		"met2 0 40 314 435",
 		"met3 0 40 314 435",

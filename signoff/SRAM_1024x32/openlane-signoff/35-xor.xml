@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
- <description>XOR /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_09_12_33/results/signoff/SRAM_1024x32.gds vs. /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_09_12_33/results/signoff/SRAM_1024x32.klayout.gds</description>
+ <description>XOR /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_09_12_50/results/signoff/SRAM_1024x32.gds vs. /home/passant/efabless/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_09_12_50/results/signoff/SRAM_1024x32.klayout.gds</description>
  <original-file/>
  <generator>drc: script='/openlane/scripts/klayout/xor.drc'</generator>
  <top-cell>SRAM_1024x32</top-cell>
