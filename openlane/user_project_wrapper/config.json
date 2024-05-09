@@ -8,7 +8,7 @@
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.clk",
-    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 vccd1 vssd1",
+    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 VPWR VGND",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [

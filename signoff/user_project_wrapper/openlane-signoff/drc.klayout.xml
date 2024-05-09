@@ -28,6 +28,105 @@
             <visited>false</visited>
             <multiplicity>1</multiplicity>
             <values>
+                <value>box: (N-well,overlap;of,Deep)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (25.160,157.595;26.590,314.560)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (25.160,156.165;314.560,157.595)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (25.160,540.275;314.560,541.705)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (25.160,314.560;26.590,540.275)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (327.045,157.595;328.475,314.560)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (314.560,156.165;328.475,157.595)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (314.560,540.275;328.475,541.705)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (327.045,314.560;328.475,540.275)</value>
+                <value>text: 'On layer met1'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal1_minimum_area_lt_0dot083umpow2_met1dot6</category>
+            <cell>user_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
                 <value>box: ([INFO]:,Should;be,divided)</value>
                 <value>text: 'On layer met1'</value>
                 <value>text: 'Between N/A N/A'</value>
