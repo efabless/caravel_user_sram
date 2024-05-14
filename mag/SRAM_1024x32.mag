@@ -61750,7 +61750,7 @@ use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_155_2_Right_163
 timestamp 1704896540
 transform -1 0 74980 0 -1 85952
 box -38 -48 314 592
-use EFSRAM_1024x32_wrapper  SRAM_0
+use EF_SRAM_1024x32_wrapper  SRAM_0
 timestamp 0
 transform 0 -1 63283 1 0 8000
 box 0 -40 77574 61263
