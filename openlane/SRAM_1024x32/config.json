@@ -3,9 +3,9 @@
     "FP_PDN_MULTILAYER": true,
     "FP_PDN_CORE_RING": false,
     "VERILOG_FILES": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/hdl/ram_controller.v",
-        "dir::../../ip/EFSRAM_01024x032_008_18/hdl/SRAM_1024x32.v",
-        "dir::../../ip/EFSRAM_01024x032_008_18/hdl/EFSRAM_1024x32_wrapper.v"
+        "dir::../../ip/EF_SRAM_1024x32/hdl/ram_controller.v",
+        "dir::../../ip/EF_SRAM_1024x32/hdl/SRAM_1024x32.v",
+        "dir::../../ip/EF_SRAM_1024x32/hdl/EFSRAM_1024x32_wrapper.v"
     ],
     "SYNTH_DEFINES": ["PnR"],
     "ERROR_ON_LINTER_ERRORS": false,
@@ -24,16 +24,16 @@
         "VGND"
     ],
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/hdl/EFSRAM_01024x032_008_18_stub.v"
+        "dir::../../ip/EF_SRAM_1024x32/hdl/EFSRAM_01024x032_008_18_stub.v"
     ],
     "EXTRA_GDS_FILES": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/gds/EFSRAM_1024x32_wrapper.gds"
+        "dir::../../ip/EF_SRAM_1024x32/gds/EFSRAM_1024x32_wrapper.gds"
     ],
     "EXTRA_LEFS": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/lef/EFSRAM_1024x32_wrapper.lef"
+        "dir::../../ip/EF_SRAM_1024x32/lef/EFSRAM_1024x32_wrapper.lef"
     ],
     "EXTRA_LIBS": [
-        "dir::../../ip/EFSRAM_01024x032_008_18/lib/EFSRAM_1024x32_wrapper_tt_180V_25C.lib"
+        "dir::../../ip/EF_SRAM_1024x32/lib/EFSRAM_1024x32_wrapper_tt_180V_25C.lib"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "FP_PDN_HORIZONTAL_LAYER": "met3",
