@@ -1,6 +1,6 @@
 *SPEF "ieee 1481-1999"
 *DESIGN "SRAM_1024x32"
-*DATE "09:51:27 Thursday May 09, 2024"
+*DATE "11:00:27 Wednesday May 15, 2024"
 *VENDOR "The OpenROAD Project"
 *PROGRAM "OpenROAD"
 *VERSION "da0053d7b0014ab9c87ea148875ff6c2a0f9b658"
@@ -5233,7 +5233,7 @@ wbs_we_i I
 
 *D_NET *115 0.0144791
 *CONN
-*I *2997:CLKin I *D EFSRAM_1024x32_wrapper
+*I *2997:CLKin I *D EF_SRAM_1024x32_wrapper
 *I *3392:X O *D sky130_fd_sc_hd__clkbuf_16
 *CAP
 1 *2997:CLKin 0.00117327
@@ -5306,7 +5306,7 @@ wbs_we_i I
 
 *D_NET *118 0.0282177
 *CONN
-*I *2997:DI[26] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[26] I *D EF_SRAM_1024x32_wrapper
 *I *3510:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[26] 0.00178954
@@ -5341,7 +5341,7 @@ wbs_we_i I
 
 *D_NET *120 0.0558819
 *CONN
-*I *2997:DI[1] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[1] I *D EF_SRAM_1024x32_wrapper
 *I *3394:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[1] 0.00235953
@@ -5390,7 +5390,7 @@ wbs_we_i I
 
 *D_NET *122 0.0214708
 *CONN
-*I *2997:DI[14] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[14] I *D EF_SRAM_1024x32_wrapper
 *I *3416:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[14] 0.0016192
@@ -5434,7 +5434,7 @@ wbs_we_i I
 
 *D_NET *124 0.0321554
 *CONN
-*I *2997:DI[9] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[9] I *D EF_SRAM_1024x32_wrapper
 *I *3438:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[9] 0.00181519
@@ -5488,7 +5488,7 @@ wbs_we_i I
 
 *D_NET *126 0.0282406
 *CONN
-*I *2997:DI[27] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[27] I *D EF_SRAM_1024x32_wrapper
 *I *3440:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[27] 0.000930283
@@ -5563,7 +5563,7 @@ wbs_we_i I
 
 *D_NET *129 0.0553642
 *CONN
-*I *2997:DI[0] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[0] I *D EF_SRAM_1024x32_wrapper
 *I *3442:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[0] 0.00215775
@@ -5618,7 +5618,7 @@ wbs_we_i I
 
 *D_NET *131 0.0258055
 *CONN
-*I *2997:DI[13] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[13] I *D EF_SRAM_1024x32_wrapper
 *I *3445:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[13] 0.00233337
@@ -5663,7 +5663,7 @@ wbs_we_i I
 
 *D_NET *133 0.0277596
 *CONN
-*I *2997:DI[28] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[28] I *D EF_SRAM_1024x32_wrapper
 *I *3447:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[28] 0.00111149
@@ -5697,7 +5697,7 @@ wbs_we_i I
 
 *D_NET *135 0.0399545
 *CONN
-*I *2997:DI[8] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[8] I *D EF_SRAM_1024x32_wrapper
 *I *3449:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[8] 0.00168748
@@ -5742,7 +5742,7 @@ wbs_we_i I
 
 *D_NET *137 0.0319599
 *CONN
-*I *2997:DI[29] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[29] I *D EF_SRAM_1024x32_wrapper
 *I *3451:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[29] 0.000591053
@@ -5809,7 +5809,7 @@ wbs_we_i I
 
 *D_NET *140 0.0244224
 *CONN
-*I *2997:DI[30] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[30] I *D EF_SRAM_1024x32_wrapper
 *I *3453:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[30] 0.000809762
@@ -5842,7 +5842,7 @@ wbs_we_i I
 
 *D_NET *142 0.0329024
 *CONN
-*I *2997:DI[7] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[7] I *D EF_SRAM_1024x32_wrapper
 *I *3456:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[7] 0.000298019
@@ -5902,7 +5902,7 @@ wbs_we_i I
 
 *D_NET *144 0.0226669
 *CONN
-*I *2997:DI[12] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[12] I *D EF_SRAM_1024x32_wrapper
 *I *3458:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[12] 0.000359642
@@ -5957,7 +5957,7 @@ wbs_we_i I
 
 *D_NET *146 0.0349092
 *CONN
-*I *2997:DI[6] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[6] I *D EF_SRAM_1024x32_wrapper
 *I *3460:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[6] 0.00019703
@@ -6004,7 +6004,7 @@ wbs_we_i I
 
 *D_NET *148 0.0241903
 *CONN
-*I *2997:DI[31] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[31] I *D EF_SRAM_1024x32_wrapper
 *I *3462:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[31] 0.000949633
@@ -6066,7 +6066,7 @@ wbs_we_i I
 
 *D_NET *151 0.0220334
 *CONN
-*I *2997:DI[11] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[11] I *D EF_SRAM_1024x32_wrapper
 *I *3464:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[11] 0.00085732
@@ -6118,7 +6118,7 @@ wbs_we_i I
 
 *D_NET *153 0.0332491
 *CONN
-*I *2997:DI[5] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[5] I *D EF_SRAM_1024x32_wrapper
 *I *3467:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[5] 5.99729e-05
@@ -6163,7 +6163,7 @@ wbs_we_i I
 
 *D_NET *155 0.0411106
 *CONN
-*I *2997:DI[4] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[4] I *D EF_SRAM_1024x32_wrapper
 *I *3469:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[4] 0.000360891
@@ -6216,7 +6216,7 @@ wbs_we_i I
 
 *D_NET *157 0.0236048
 *CONN
-*I *2997:DI[18] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[18] I *D EF_SRAM_1024x32_wrapper
 *I *3471:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[18] 0.00136024
@@ -6252,7 +6252,7 @@ wbs_we_i I
 
 *D_NET *159 0.0263679
 *CONN
-*I *2997:DI[17] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[17] I *D EF_SRAM_1024x32_wrapper
 *I *3473:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[17] 0.00167027
@@ -6313,7 +6313,7 @@ wbs_we_i I
 
 *D_NET *162 0.0273928
 *CONN
-*I *2997:DI[16] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[16] I *D EF_SRAM_1024x32_wrapper
 *I *3475:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[16] 0.00178612
@@ -6349,7 +6349,7 @@ wbs_we_i I
 
 *D_NET *164 0.0234224
 *CONN
-*I *2997:DI[19] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[19] I *D EF_SRAM_1024x32_wrapper
 *I *3478:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[19] 0.000474312
@@ -6389,7 +6389,7 @@ wbs_we_i I
 
 *D_NET *166 0.0199693
 *CONN
-*I *2997:AD[9] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[9] I *D EF_SRAM_1024x32_wrapper
 *I *3480:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[9] 0.00140387
@@ -6428,7 +6428,7 @@ wbs_we_i I
 
 *D_NET *168 0.0255972
 *CONN
-*I *2997:DI[20] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[20] I *D EF_SRAM_1024x32_wrapper
 *I *3482:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[20] 0.000523465
@@ -6464,7 +6464,7 @@ wbs_we_i I
 
 *D_NET *170 0.0263285
 *CONN
-*I *2997:DI[21] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[21] I *D EF_SRAM_1024x32_wrapper
 *I *3484:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[21] 0.000427195
@@ -6532,7 +6532,7 @@ wbs_we_i I
 
 *D_NET *173 0.0403095
 *CONN
-*I *2997:DI[3] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[3] I *D EF_SRAM_1024x32_wrapper
 *I *3486:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[3] 0.000450881
@@ -6588,7 +6588,7 @@ wbs_we_i I
 
 *D_NET *175 0.0183877
 *CONN
-*I *2997:AD[8] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[8] I *D EF_SRAM_1024x32_wrapper
 *I *3489:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[8] 0.00150733
@@ -6627,7 +6627,7 @@ wbs_we_i I
 
 *D_NET *177 0.0276218
 *CONN
-*I *2997:DI[22] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[22] I *D EF_SRAM_1024x32_wrapper
 *I *3491:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[22] 0.000559724
@@ -6664,7 +6664,7 @@ wbs_we_i I
 
 *D_NET *179 0.0297494
 *CONN
-*I *2997:DI[23] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[23] I *D EF_SRAM_1024x32_wrapper
 *I *3493:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[23] 0.000395437
@@ -6699,7 +6699,7 @@ wbs_we_i I
 
 *D_NET *181 0.0202522
 *CONN
-*I *2997:AD[7] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[7] I *D EF_SRAM_1024x32_wrapper
 *I *3495:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[7] 0.00121946
@@ -6758,7 +6758,7 @@ wbs_we_i I
 
 *D_NET *184 0.0284055
 *CONN
-*I *2997:DI[24] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[24] I *D EF_SRAM_1024x32_wrapper
 *I *3497:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[24] 0.000406559
@@ -6800,7 +6800,7 @@ wbs_we_i I
 
 *D_NET *186 0.021318
 *CONN
-*I *2997:AD[6] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[6] I *D EF_SRAM_1024x32_wrapper
 *I *3500:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[6] 0.000693842
@@ -6855,7 +6855,7 @@ wbs_we_i I
 
 *D_NET *188 0.0222431
 *CONN
-*I *2997:AD[5] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[5] I *D EF_SRAM_1024x32_wrapper
 *I *3502:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[5] 0.000768304
@@ -6906,7 +6906,7 @@ wbs_we_i I
 
 *D_NET *190 0.0262446
 *CONN
-*I *2997:DI[25] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[25] I *D EF_SRAM_1024x32_wrapper
 *I *3504:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[25] 0.000696973
@@ -6947,7 +6947,7 @@ wbs_we_i I
 
 *D_NET *192 0.0214338
 *CONN
-*I *2997:AD[4] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[4] I *D EF_SRAM_1024x32_wrapper
 *I *3506:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[4] 0.000860289
@@ -7028,7 +7028,7 @@ wbs_we_i I
 
 *D_NET *195 0.0506043
 *CONN
-*I *2997:AD[3] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[3] I *D EF_SRAM_1024x32_wrapper
 *I *3508:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[3] 0.00013607
@@ -7091,7 +7091,7 @@ wbs_we_i I
 
 *D_NET *197 0.0187284
 *CONN
-*I *2997:AD[2] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[2] I *D EF_SRAM_1024x32_wrapper
 *I *3511:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[2] 0.000546222
@@ -7136,7 +7136,7 @@ wbs_we_i I
 
 *D_NET *199 0.0224523
 *CONN
-*I *2997:AD[1] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[1] I *D EF_SRAM_1024x32_wrapper
 *I *3513:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[1] 0.000863721
@@ -7181,7 +7181,7 @@ wbs_we_i I
 
 *D_NET *201 0.0597599
 *CONN
-*I *2997:AD[0] I *D EFSRAM_1024x32_wrapper
+*I *2997:AD[0] I *D EF_SRAM_1024x32_wrapper
 *I *3515:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:AD[0] 0.000228792
@@ -7250,14 +7250,14 @@ wbs_we_i I
 
 *D_NET *203 0.0370664
 *CONN
-*I *2997:BEN[8] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[9] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[10] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[11] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[12] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[13] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[14] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[15] I *D EFSRAM_1024x32_wrapper
+*I *2997:BEN[8] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[9] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[10] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[11] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[12] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[13] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[14] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[15] I *D EF_SRAM_1024x32_wrapper
 *I *3517:X O *D sky130_fd_sc_hd__buf_12
 *CAP
 1 *2997:BEN[8] 0.000908127
@@ -7392,14 +7392,14 @@ wbs_we_i I
 
 *D_NET *207 0.0686156
 *CONN
-*I *2997:BEN[0] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[1] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[2] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[3] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[4] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[5] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[6] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[7] I *D EFSRAM_1024x32_wrapper
+*I *2997:BEN[0] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[1] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[2] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[3] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[4] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[5] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[6] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[7] I *D EF_SRAM_1024x32_wrapper
 *I *3520:X O *D sky130_fd_sc_hd__buf_12
 *CAP
 1 *2997:BEN[0] 0.000695659
@@ -7530,14 +7530,14 @@ wbs_we_i I
 
 *D_NET *210 0.0361988
 *CONN
-*I *2997:BEN[23] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[22] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[21] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[20] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[19] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[18] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[17] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[16] I *D EFSRAM_1024x32_wrapper
+*I *2997:BEN[23] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[22] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[21] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[20] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[19] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[18] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[17] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[16] I *D EF_SRAM_1024x32_wrapper
 *I *3524:X O *D sky130_fd_sc_hd__buf_12
 *CAP
 1 *2997:BEN[23] 0.00101677
@@ -7651,14 +7651,14 @@ wbs_we_i I
 
 *D_NET *213 0.0410002
 *CONN
-*I *2997:BEN[31] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[30] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[29] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[28] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[27] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[26] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[25] I *D EFSRAM_1024x32_wrapper
-*I *2997:BEN[24] I *D EFSRAM_1024x32_wrapper
+*I *2997:BEN[31] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[30] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[29] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[28] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[27] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[26] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[25] I *D EF_SRAM_1024x32_wrapper
+*I *2997:BEN[24] I *D EF_SRAM_1024x32_wrapper
 *I *3527:X O *D sky130_fd_sc_hd__buf_12
 *CAP
 1 *2997:BEN[31] 0.00103073
@@ -9517,7 +9517,7 @@ wbs_we_i I
 *D_NET *295 0.0705188
 *CONN
 *I *3583:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[0] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[0] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3583:A 0.00113142
 2 *2997:DO[0] 0.00531847
@@ -9553,7 +9553,7 @@ wbs_we_i I
 *D_NET *296 0.0403436
 *CONN
 *I *3584:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[10] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[10] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3584:A 0.00131401
 2 *2997:DO[10] 0.000838866
@@ -9590,7 +9590,7 @@ wbs_we_i I
 *D_NET *297 0.0322524
 *CONN
 *I *3585:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[11] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[11] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3585:A 0.00109554
 2 *2997:DO[11] 0.000620726
@@ -9626,7 +9626,7 @@ wbs_we_i I
 *D_NET *298 0.0362639
 *CONN
 *I *3586:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[12] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[12] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3586:A 0.000112769
 2 *2997:DO[12] 0.00144313
@@ -9681,7 +9681,7 @@ wbs_we_i I
 *D_NET *299 0.026225
 *CONN
 *I *3587:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[13] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[13] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3587:A 0.000218851
 2 *2997:DO[13] 0.00118041
@@ -9720,7 +9720,7 @@ wbs_we_i I
 *D_NET *300 0.0301871
 *CONN
 *I *3588:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[14] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[14] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3588:A 0.00148
 2 *2997:DO[14] 0.00117551
@@ -9757,7 +9757,7 @@ wbs_we_i I
 *D_NET *301 0.0191741
 *CONN
 *I *3589:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[15] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[15] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3589:A 0.000275506
 2 *2997:DO[15] 0.00062033
@@ -9790,7 +9790,7 @@ wbs_we_i I
 *D_NET *302 0.0523317
 *CONN
 *I *3590:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[16] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[16] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3590:A 0.000620586
 2 *2997:DO[16] 7.34784e-05
@@ -9866,7 +9866,7 @@ wbs_we_i I
 *D_NET *304 0.0481283
 *CONN
 *I *3591:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[17] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[17] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3591:A 0.000310583
 2 *2997:DO[17] 5.05397e-05
@@ -9919,7 +9919,7 @@ wbs_we_i I
 *D_NET *305 0.0517351
 *CONN
 *I *3592:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[18] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[18] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3592:A 0.000129199
 2 *2997:DO[18] 0.0016204
@@ -9970,7 +9970,7 @@ wbs_we_i I
 *D_NET *306 0.0520414
 *CONN
 *I *3593:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[19] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[19] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3593:A 0
 2 *2997:DO[19] 0.000417719
@@ -10025,7 +10025,7 @@ wbs_we_i I
 *D_NET *307 0.0692107
 *CONN
 *I *3594:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[1] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[1] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3594:A 0.0140067
 2 *2997:DO[1] 0.00436926
@@ -10054,7 +10054,7 @@ wbs_we_i I
 *D_NET *308 0.0514856
 *CONN
 *I *3595:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[20] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[20] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3595:A 0.000472539
 2 *2997:DO[20] 0.000375958
@@ -10110,7 +10110,7 @@ wbs_we_i I
 *D_NET *309 0.0596826
 *CONN
 *I *3596:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[21] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[21] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3596:A 0.00237823
 2 *2997:DO[21] 0.000745867
@@ -10146,7 +10146,7 @@ wbs_we_i I
 *D_NET *310 0.0534401
 *CONN
 *I *3597:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[22] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[22] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3597:A 0.00217977
 2 *2997:DO[22] 0.000384594
@@ -10185,7 +10185,7 @@ wbs_we_i I
 *D_NET *311 0.0513301
 *CONN
 *I *3598:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[23] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[23] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3598:A 0.000207391
 2 *2997:DO[23] 0.00177642
@@ -10214,7 +10214,7 @@ wbs_we_i I
 *D_NET *312 0.0651527
 *CONN
 *I *3599:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[24] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[24] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3599:A 0
 2 *2997:DO[24] 0.00125103
@@ -10253,7 +10253,7 @@ wbs_we_i I
 *D_NET *313 0.0540886
 *CONN
 *I *3600:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[25] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[25] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3600:A 0.00356888
 2 *2997:DO[25] 0.000349606
@@ -10327,7 +10327,7 @@ wbs_we_i I
 *D_NET *315 0.0605397
 *CONN
 *I *3601:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[26] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[26] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3601:A 0.000279129
 2 *2997:DO[26] 0.000445152
@@ -10350,7 +10350,7 @@ wbs_we_i I
 *D_NET *316 0.0671838
 *CONN
 *I *3602:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[27] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[27] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3602:A 7.45563e-05
 2 *2997:DO[27] 0.000853711
@@ -10387,7 +10387,7 @@ wbs_we_i I
 *D_NET *317 0.0581705
 *CONN
 *I *3603:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[28] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[28] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3603:A 0
 2 *2997:DO[28] 0.000889392
@@ -10423,7 +10423,7 @@ wbs_we_i I
 *D_NET *318 0.0547108
 *CONN
 *I *3604:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[29] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[29] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3604:A 0
 2 *2997:DO[29] 0.00110365
@@ -10453,7 +10453,7 @@ wbs_we_i I
 *D_NET *319 0.0653164
 *CONN
 *I *3605:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[2] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[2] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3605:A 0.00161179
 2 *2997:DO[2] 0.00802489
@@ -10496,7 +10496,7 @@ wbs_we_i I
 *D_NET *320 0.067896
 *CONN
 *I *3606:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[30] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[30] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3606:A 0.000343586
 2 *2997:DO[30] 0.00141009
@@ -10524,7 +10524,7 @@ wbs_we_i I
 *D_NET *321 0.0644638
 *CONN
 *I *3607:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[31] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[31] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3607:A 0.000318168
 2 *2997:DO[31] 0.00132169
@@ -10550,7 +10550,7 @@ wbs_we_i I
 *D_NET *322 0.063653
 *CONN
 *I *3608:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[3] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[3] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3608:A 0.00213778
 2 *2997:DO[3] 0.000889618
@@ -10605,7 +10605,7 @@ wbs_we_i I
 *D_NET *323 0.056627
 *CONN
 *I *3609:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[4] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[4] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3609:A 0.000198798
 2 *2997:DO[4] 0.00139828
@@ -10672,7 +10672,7 @@ wbs_we_i I
 *D_NET *324 0.0553343
 *CONN
 *I *3610:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[5] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[5] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3610:A 0.000157388
 2 *2997:DO[5] 0.00110393
@@ -10755,7 +10755,7 @@ wbs_we_i I
 *D_NET *326 0.0476669
 *CONN
 *I *3611:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[6] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[6] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3611:A 2.15003e-05
 2 *2997:DO[6] 0.000701357
@@ -10820,7 +10820,7 @@ wbs_we_i I
 *D_NET *327 0.051196
 *CONN
 *I *3612:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[7] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[7] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3612:A 7.72884e-05
 2 *2997:DO[7] 0.000621133
@@ -10857,7 +10857,7 @@ wbs_we_i I
 *D_NET *328 0.0487827
 *CONN
 *I *3613:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[8] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[8] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3613:A 0.000121179
 2 *2997:DO[8] 0.000949011
@@ -10893,7 +10893,7 @@ wbs_we_i I
 *D_NET *329 0.0456037
 *CONN
 *I *3614:A I *D sky130_fd_sc_hd__buf_12
-*I *2997:DO[9] O *D EFSRAM_1024x32_wrapper
+*I *2997:DO[9] O *D EF_SRAM_1024x32_wrapper
 *CAP
 1 *3614:A 0.000178606
 2 *2997:DO[9] 0.000722938
@@ -10928,7 +10928,7 @@ wbs_we_i I
 
 *D_NET *330 0.00145902
 *CONN
-*I *2997:SM I *D EFSRAM_1024x32_wrapper
+*I *2997:SM I *D EF_SRAM_1024x32_wrapper
 *I *2998:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:SM 0.000729508
@@ -10941,7 +10941,7 @@ wbs_we_i I
 
 *D_NET *331 0.00172231
 *CONN
-*I *2997:ScanInCC I *D EFSRAM_1024x32_wrapper
+*I *2997:ScanInCC I *D EF_SRAM_1024x32_wrapper
 *I *2999:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:ScanInCC 0.000662711
@@ -10956,7 +10956,7 @@ wbs_we_i I
 
 *D_NET *332 0.00158245
 *CONN
-*I *2997:ScanInDL I *D EFSRAM_1024x32_wrapper
+*I *2997:ScanInDL I *D EF_SRAM_1024x32_wrapper
 *I *3000:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:ScanInDL 0.00069965
@@ -10969,7 +10969,7 @@ wbs_we_i I
 
 *D_NET *333 0.00174088
 *CONN
-*I *2997:ScanInDR I *D EFSRAM_1024x32_wrapper
+*I *2997:ScanInDR I *D EF_SRAM_1024x32_wrapper
 *I *3001:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:ScanInDR 0.00059899
@@ -10983,7 +10983,7 @@ wbs_we_i I
 
 *D_NET *334 0.00181149
 *CONN
-*I *2997:TM I *D EFSRAM_1024x32_wrapper
+*I *2997:TM I *D EF_SRAM_1024x32_wrapper
 *I *3002:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:TM 0.000712886
@@ -10999,7 +10999,7 @@ wbs_we_i I
 
 *D_NET *335 0.00193309
 *CONN
-*I *2997:WLBI I *D EFSRAM_1024x32_wrapper
+*I *2997:WLBI I *D EF_SRAM_1024x32_wrapper
 *I *3003:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:WLBI 0.000623733
@@ -11045,7 +11045,7 @@ wbs_we_i I
 
 *D_NET *337 0.00165582
 *CONN
-*I *2997:WLOFF I *D EFSRAM_1024x32_wrapper
+*I *2997:WLOFF I *D EF_SRAM_1024x32_wrapper
 *I *3004:LO O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:WLOFF 0.000785834
@@ -11059,7 +11059,7 @@ wbs_we_i I
 
 *D_NET *338 0.046054
 *CONN
-*I *2997:vpwrac I *D EFSRAM_1024x32_wrapper
+*I *2997:vpwrac I *D EF_SRAM_1024x32_wrapper
 *I *3005:HI O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:vpwrac 5.32663e-05
@@ -11093,7 +11093,7 @@ wbs_we_i I
 
 *D_NET *339 0.038548
 *CONN
-*I *2997:vpwrpc I *D EFSRAM_1024x32_wrapper
+*I *2997:vpwrpc I *D EF_SRAM_1024x32_wrapper
 *I *3006:HI O *D sky130_fd_sc_hd__conb_1
 *CAP
 1 *2997:vpwrpc 0.00228889
@@ -11140,7 +11140,7 @@ wbs_we_i I
 
 *D_NET *341 0.0128751
 *CONN
-*I *2997:DI[15] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[15] I *D EF_SRAM_1024x32_wrapper
 *I *3444:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[15] 0.00074061
@@ -11177,7 +11177,7 @@ wbs_we_i I
 
 *D_NET *343 0.0424777
 *CONN
-*I *2997:DI[2] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[2] I *D EF_SRAM_1024x32_wrapper
 *I *3466:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[2] 3.41242e-05
@@ -11230,7 +11230,7 @@ wbs_we_i I
 
 *D_NET *345 0.0284859
 *CONN
-*I *2997:DI[10] I *D EFSRAM_1024x32_wrapper
+*I *2997:DI[10] I *D EF_SRAM_1024x32_wrapper
 *I *3488:X O *D sky130_fd_sc_hd__dlygate4sd3_1
 *CAP
 1 *2997:DI[10] 0.00117583
@@ -11289,7 +11289,7 @@ wbs_we_i I
 
 *D_NET *347 0.0603806
 *CONN
-*I *2997:EN I *D EFSRAM_1024x32_wrapper
+*I *2997:EN I *D EF_SRAM_1024x32_wrapper
 *I *3385:X O *D sky130_fd_sc_hd__buf_4
 *CAP
 1 *2997:EN 0.0101264
@@ -11332,7 +11332,7 @@ wbs_we_i I
 
 *D_NET *348 0.0769347
 *CONN
-*I *2997:R_WB I *D EFSRAM_1024x32_wrapper
+*I *2997:R_WB I *D EF_SRAM_1024x32_wrapper
 *I *3383:Y O *D sky130_fd_sc_hd__clkinv_4
 *CAP
 1 *2997:R_WB 0.000769271
