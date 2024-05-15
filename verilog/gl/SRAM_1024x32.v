@@ -10856,7 +10856,7 @@ module SRAM_1024x32 (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- EFSRAM_1024x32_wrapper SRAM_0 (.WLBI(net89),
+ EF_SRAM_1024x32_wrapper SRAM_0 (.WLBI(net89),
     .WLOFF(net90),
     .CLKin(clknet_1_1__leaf_wb_clk_i),
     .EN(\ram_controller.EN ),

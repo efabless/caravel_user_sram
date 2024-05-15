@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "SRAM_1024x32")
- (DATE "Thu May  9 09:51:15 2024")
+ (DATE "Wed May 15 11:00:16 2024")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.5.0")
@@ -375,7 +375,7 @@
   )
  )
  (CELL
-  (CELLTYPE "EFSRAM_1024x32_wrapper")
+  (CELLTYPE "EF_SRAM_1024x32_wrapper")
   (INSTANCE SRAM_0)
   (DELAY
    (ABSOLUTE
