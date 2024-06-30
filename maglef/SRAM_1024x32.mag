@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1715770830
+timestamp 1719483313
 << obsli1 >>
 rect 1012 1071 74980 85969
 << obsm1 >>
@@ -657,8 +657,8 @@ port 108 nsew signal input
 string FIXED_BBOX 0 0 76000 87000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 1591742
-string GDS_FILE /Users/marwan/work/caravel_user_sram/openlane/SRAM_1024x32/runs/24_05_15_13_59/results/signoff/SRAM_1024x32.magic.gds
-string GDS_START 191340
+string GDS_END 1592202
+string GDS_FILE /home/marwan/caravel_user_sram/openlane/SRAM_1024x32/runs/24_06_27_13_14/results/signoff/SRAM_1024x32.magic.gds
+string GDS_START 191800
 << end >>
 
