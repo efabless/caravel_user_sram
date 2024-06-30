@@ -14,7 +14,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Caravel user project includes
--v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
-
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32_wrapper.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/ram_controller.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/SRAM_1024x32.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/beh_models/EF_SRAM_1024x32.tt_180V_25C.v
  
