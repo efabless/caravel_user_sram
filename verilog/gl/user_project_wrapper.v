@@ -54,7 +54,7 @@ module user_project_wrapper (user_clock2,
  input [3:0] wbs_sel_i;
 
 
- SRAM_1024x32 mprj (.VGND(vssd1),
+ SRAM_1024x32_wrapper mprj (.VGND(vssd1),
     .VPWR(vccd1),
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
