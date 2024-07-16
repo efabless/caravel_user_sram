@@ -1,4 +1,4 @@
-module SRAM_1024x32_wrapper (VGND,
+module SRAM_1024x32_wb_wrapper (VGND,
     VPWR,
     wb_clk_i,
     wb_rst_i,

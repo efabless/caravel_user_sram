@@ -1,11 +1,11 @@
 {
-    "DESIGN_NAME": "SRAM_1024x32_wrapper",
+    "DESIGN_NAME": "SRAM_1024x32_wb_wrapper",
     "FP_PDN_MULTILAYER": true,
     "FP_PDN_CORE_RING": false,
     "VERILOG_FILES": [
-        "dir::../../ip/EF_SRAM_1024x32/hdl/ram_controller.v",
         "dir::../../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32.v",
-        "dir::../../ip/EF_SRAM_1024x32/hdl/SRAM_1024x32_wrapper.v"
+        "dir::../../ip/EF_SRAM_1024x32/hdl/bus_wrapper/ram_wb_controller.v",
+        "dir::../../ip/EF_SRAM_1024x32/hdl/bus_wrapper/SRAM_1024x32_wb_wrapper.v"
     ],
     "SYNTH_DEFINES": ["PnR"],
     "ERROR_ON_LINTER_ERRORS": false,
@@ -55,7 +55,7 @@
     ],
     "FP_PDN_CFG": "dir::pdn.tcl",
     "QUIT_ON_LINTER_ERRORS": false,
-    "//GRT_OBS": [
+    "GRT_OBS": [
 		"met1 0 40 314 435",
 		"met2 0 40 314 435",
 		"met3 0 40 314 435",

@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_project_wrapper")
- (DATE "Sun Jul 14 11:02:48 2024")
+ (DATE "Tue Jul 16 10:22:53 2024")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.5.0")
@@ -125,7 +125,7 @@
   )
  )
  (CELL
-  (CELLTYPE "SRAM_1024x32_wrapper")
+  (CELLTYPE "SRAM_1024x32_wb_wrapper")
   (INSTANCE mprj)
   (DELAY
    (ABSOLUTE

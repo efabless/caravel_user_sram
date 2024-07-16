@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1720954993
+timestamp 1721125400
 << obsli1 >>
 rect 4024 24071 77992 108969
 << obsm1 >>
@@ -780,11 +780,11 @@ rect 45234 -7654 45854 711590
 rect 48954 112160 49574 711590
 rect 52674 112160 53294 711590
 rect 56394 112160 57014 711590
-rect 60114 101477 60734 711590
-rect 63834 101477 64454 711590
-rect 73794 112160 74414 711590
 rect 48954 -7654 49574 20840
 rect 52674 -7654 53294 20840
+rect 60114 -7654 60734 711590
+rect 63834 99029 64454 711590
+rect 73794 112160 74414 711590
 rect 73794 -7654 74414 20840
 rect 77514 -7654 78134 711590
 rect 81234 -7654 81854 711590
@@ -914,10 +914,10 @@ rect 9934 23000 24034 110000
 rect 24814 23000 27754 110000
 rect 28534 23000 41434 110000
 rect 42214 23000 45154 110000
-rect 45934 101397 60034 110000
-rect 60814 101397 63754 110000
-rect 64534 101397 77334 110000
-rect 45934 23000 77334 101397
+rect 45934 23000 60034 110000
+rect 60814 98949 63754 110000
+rect 64534 98949 77334 110000
+rect 60814 23000 77334 98949
 << metal5 >>
 rect -8726 710970 592650 711590
 rect -7766 710010 591690 710630
@@ -2412,7 +2412,7 @@ rlabel metal4 s 591070 -6694 591690 710630 6 vdda2
 port 535 nsew power bidirectional
 rlabel metal4 s 24114 -7654 24734 711590 6 vdda2
 port 535 nsew power bidirectional
-rlabel metal4 s 60114 101477 60734 711590 6 vdda2
+rlabel metal4 s 60114 -7654 60734 711590 6 vdda2
 port 535 nsew power bidirectional
 rlabel metal4 s 96114 -7654 96734 711590 6 vdda2
 port 535 nsew power bidirectional
@@ -2568,7 +2568,7 @@ rlabel metal4 s 592030 -7654 592650 711590 6 vssa2
 port 537 nsew ground bidirectional
 rlabel metal4 s 27834 -7654 28454 711590 6 vssa2
 port 537 nsew ground bidirectional
-rlabel metal4 s 63834 101477 64454 711590 6 vssa2
+rlabel metal4 s 63834 99029 64454 711590 6 vssa2
 port 537 nsew ground bidirectional
 rlabel metal4 s 99834 -7654 100454 711590 6 vssa2
 port 537 nsew ground bidirectional
@@ -3018,8 +3018,8 @@ port 645 nsew signal input
 string FIXED_BBOX 0 0 584000 704000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 2712474
-string GDS_FILE /Users/marwan/work/caravel_user_sram/openlane/user_project_wrapper/runs/24_07_14_14_02/results/signoff/user_project_wrapper.magic.gds
-string GDS_START 1614398
+string GDS_END 2693538
+string GDS_FILE /Users/marwan/work/caravel_user_sram/openlane/user_project_wrapper/runs/24_07_16_13_22/results/signoff/user_project_wrapper.magic.gds
+string GDS_START 1592258
 << end >>
 
