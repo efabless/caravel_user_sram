@@ -1,6 +1,6 @@
 *SPEF "ieee 1481-1999"
 *DESIGN "user_project_wrapper"
-*DATE "11:01:06 Wednesday May 15, 2024"
+*DATE "10:23:09 Tuesday July 16, 2024"
 *VENDOR "The OpenROAD Project"
 *PROGRAM "OpenROAD"
 *VERSION "da0053d7b0014ab9c87ea148875ff6c2a0f9b658"
@@ -1295,7 +1295,7 @@ wbs_we_i I
 *D_NET *540 0.0305266
 *CONN
 *P wb_clk_i I
-*I *646:wb_clk_i I *D SRAM_1024x32
+*I *646:wb_clk_i I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wb_clk_i 0.00408997
 2 *646:wb_clk_i 0.00431307
@@ -1325,7 +1325,7 @@ wbs_we_i I
 *D_NET *541 0.0332133
 *CONN
 *P wb_rst_i I
-*I *646:wb_rst_i I *D SRAM_1024x32
+*I *646:wb_rst_i I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wb_rst_i 0.00310474
 2 *646:wb_rst_i 0.00265633
@@ -1361,7 +1361,7 @@ wbs_we_i I
 *D_NET *542 0.0362493
 *CONN
 *P wbs_ack_o O
-*I *646:wbs_ack_o O *D SRAM_1024x32
+*I *646:wbs_ack_o O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_ack_o 0.000824543
 2 *646:wbs_ack_o 0.0044128
@@ -1394,7 +1394,7 @@ wbs_we_i I
 *D_NET *543 0.0358791
 *CONN
 *P wbs_adr_i[0] I
-*I *646:wbs_adr_i[0] I *D SRAM_1024x32
+*I *646:wbs_adr_i[0] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[0] 0.00259668
 2 *646:wbs_adr_i[0] 0.00365958
@@ -1426,7 +1426,7 @@ wbs_we_i I
 *D_NET *544 0.0128889
 *CONN
 *P wbs_adr_i[10] I
-*I *646:wbs_adr_i[10] I *D SRAM_1024x32
+*I *646:wbs_adr_i[10] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[10] 0.00201251
 2 *646:wbs_adr_i[10] 0.0038389
@@ -1445,7 +1445,7 @@ wbs_we_i I
 *D_NET *545 0.0149814
 *CONN
 *P wbs_adr_i[11] I
-*I *646:wbs_adr_i[11] I *D SRAM_1024x32
+*I *646:wbs_adr_i[11] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[11] 0.00172135
 2 *646:wbs_adr_i[11] 0.00356957
@@ -1468,7 +1468,7 @@ wbs_we_i I
 *D_NET *546 0.019605
 *CONN
 *P wbs_adr_i[12] I
-*I *646:wbs_adr_i[12] I *D SRAM_1024x32
+*I *646:wbs_adr_i[12] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[12] 0.00241193
 2 *646:wbs_adr_i[12] 0.0037534
@@ -1490,7 +1490,7 @@ wbs_we_i I
 *D_NET *547 0.0188516
 *CONN
 *P wbs_adr_i[13] I
-*I *646:wbs_adr_i[13] I *D SRAM_1024x32
+*I *646:wbs_adr_i[13] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[13] 0.00177539
 2 *646:wbs_adr_i[13] 0.00286358
@@ -1513,7 +1513,7 @@ wbs_we_i I
 *D_NET *548 0.0216541
 *CONN
 *P wbs_adr_i[14] I
-*I *646:wbs_adr_i[14] I *D SRAM_1024x32
+*I *646:wbs_adr_i[14] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[14] 0.00367056
 2 *646:wbs_adr_i[14] 0.00352659
@@ -1535,7 +1535,7 @@ wbs_we_i I
 *D_NET *549 0.0218351
 *CONN
 *P wbs_adr_i[15] I
-*I *646:wbs_adr_i[15] I *D SRAM_1024x32
+*I *646:wbs_adr_i[15] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[15] 0.00185957
 2 *646:wbs_adr_i[15] 0.00345025
@@ -1559,7 +1559,7 @@ wbs_we_i I
 *D_NET *550 0.0211478
 *CONN
 *P wbs_adr_i[16] I
-*I *646:wbs_adr_i[16] I *D SRAM_1024x32
+*I *646:wbs_adr_i[16] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[16] 0.00187731
 2 *646:wbs_adr_i[16] 0.00107701
@@ -1585,7 +1585,7 @@ wbs_we_i I
 *D_NET *551 0.0246054
 *CONN
 *P wbs_adr_i[17] I
-*I *646:wbs_adr_i[17] I *D SRAM_1024x32
+*I *646:wbs_adr_i[17] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[17] 0.00196217
 2 *646:wbs_adr_i[17] 0.00285715
@@ -1610,7 +1610,7 @@ wbs_we_i I
 *D_NET *552 0.0255212
 *CONN
 *P wbs_adr_i[18] I
-*I *646:wbs_adr_i[18] I *D SRAM_1024x32
+*I *646:wbs_adr_i[18] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[18] 0.00454302
 2 *646:wbs_adr_i[18] 0.00099541
@@ -1634,7 +1634,7 @@ wbs_we_i I
 *D_NET *553 0.0300641
 *CONN
 *P wbs_adr_i[19] I
-*I *646:wbs_adr_i[19] I *D SRAM_1024x32
+*I *646:wbs_adr_i[19] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[19] 0.00190021
 2 *646:wbs_adr_i[19] 0.00413998
@@ -1664,7 +1664,7 @@ wbs_we_i I
 *D_NET *554 0.027686
 *CONN
 *P wbs_adr_i[1] I
-*I *646:wbs_adr_i[1] I *D SRAM_1024x32
+*I *646:wbs_adr_i[1] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[1] 0.00280332
 2 *646:wbs_adr_i[1] 0.00447074
@@ -1696,7 +1696,7 @@ wbs_we_i I
 *D_NET *555 0.0404555
 *CONN
 *P wbs_adr_i[20] I
-*I *646:wbs_adr_i[20] I *D SRAM_1024x32
+*I *646:wbs_adr_i[20] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[20] 0.00130185
 2 *646:wbs_adr_i[20] 0.00377747
@@ -1718,7 +1718,7 @@ wbs_we_i I
 *D_NET *556 0.0397396
 *CONN
 *P wbs_adr_i[21] I
-*I *646:wbs_adr_i[21] I *D SRAM_1024x32
+*I *646:wbs_adr_i[21] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[21] 0.00412785
 2 *646:wbs_adr_i[21] 0.00154668
@@ -1743,7 +1743,7 @@ wbs_we_i I
 *D_NET *557 0.0439899
 *CONN
 *P wbs_adr_i[22] I
-*I *646:wbs_adr_i[22] I *D SRAM_1024x32
+*I *646:wbs_adr_i[22] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[22] 0.00119309
 2 *646:wbs_adr_i[22] 0.00427032
@@ -1765,7 +1765,7 @@ wbs_we_i I
 *D_NET *558 0.0379625
 *CONN
 *P wbs_adr_i[23] I
-*I *646:wbs_adr_i[23] I *D SRAM_1024x32
+*I *646:wbs_adr_i[23] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[23] 0.00375196
 2 *646:wbs_adr_i[23] 0.00162363
@@ -1785,7 +1785,7 @@ wbs_we_i I
 *D_NET *559 0.039623
 *CONN
 *P wbs_adr_i[24] I
-*I *646:wbs_adr_i[24] I *D SRAM_1024x32
+*I *646:wbs_adr_i[24] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[24] 0.00340102
 2 *646:wbs_adr_i[24] 0.00193953
@@ -1805,7 +1805,7 @@ wbs_we_i I
 *D_NET *560 0.0360323
 *CONN
 *P wbs_adr_i[25] I
-*I *646:wbs_adr_i[25] I *D SRAM_1024x32
+*I *646:wbs_adr_i[25] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[25] 0.00253025
 2 *646:wbs_adr_i[25] 0.000721707
@@ -1834,7 +1834,7 @@ wbs_we_i I
 *D_NET *561 0.0440409
 *CONN
 *P wbs_adr_i[26] I
-*I *646:wbs_adr_i[26] I *D SRAM_1024x32
+*I *646:wbs_adr_i[26] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[26] 0.00302752
 2 *646:wbs_adr_i[26] 0.00231456
@@ -1857,7 +1857,7 @@ wbs_we_i I
 *D_NET *562 0.0354693
 *CONN
 *P wbs_adr_i[27] I
-*I *646:wbs_adr_i[27] I *D SRAM_1024x32
+*I *646:wbs_adr_i[27] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[27] 0.00422362
 2 *646:wbs_adr_i[27] 0.00103763
@@ -1878,7 +1878,7 @@ wbs_we_i I
 *D_NET *563 0.0382579
 *CONN
 *P wbs_adr_i[28] I
-*I *646:wbs_adr_i[28] I *D SRAM_1024x32
+*I *646:wbs_adr_i[28] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[28] 0.00263076
 2 *646:wbs_adr_i[28] 0.00270104
@@ -1902,7 +1902,7 @@ wbs_we_i I
 *D_NET *564 0.0382262
 *CONN
 *P wbs_adr_i[29] I
-*I *646:wbs_adr_i[29] I *D SRAM_1024x32
+*I *646:wbs_adr_i[29] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[29] 0.00167617
 2 *646:wbs_adr_i[29] 0.00228177
@@ -1928,7 +1928,7 @@ wbs_we_i I
 *D_NET *565 0.0294088
 *CONN
 *P wbs_adr_i[2] I
-*I *646:wbs_adr_i[2] I *D SRAM_1024x32
+*I *646:wbs_adr_i[2] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[2] 0.00128382
 2 *646:wbs_adr_i[2] 0.00330544
@@ -1962,7 +1962,7 @@ wbs_we_i I
 *D_NET *566 0.0375458
 *CONN
 *P wbs_adr_i[30] I
-*I *646:wbs_adr_i[30] I *D SRAM_1024x32
+*I *646:wbs_adr_i[30] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[30] 0.00228095
 2 *646:wbs_adr_i[30] 0.00304074
@@ -1987,7 +1987,7 @@ wbs_we_i I
 *D_NET *567 0.0396544
 *CONN
 *P wbs_adr_i[31] I
-*I *646:wbs_adr_i[31] I *D SRAM_1024x32
+*I *646:wbs_adr_i[31] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[31] 0.00194015
 2 *646:wbs_adr_i[31] 0.00108887
@@ -2016,7 +2016,7 @@ wbs_we_i I
 *D_NET *568 0.0223852
 *CONN
 *P wbs_adr_i[3] I
-*I *646:wbs_adr_i[3] I *D SRAM_1024x32
+*I *646:wbs_adr_i[3] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[3] 0.00294345
 2 *646:wbs_adr_i[3] 0.00451854
@@ -2038,7 +2038,7 @@ wbs_we_i I
 *D_NET *569 0.023058
 *CONN
 *P wbs_adr_i[4] I
-*I *646:wbs_adr_i[4] I *D SRAM_1024x32
+*I *646:wbs_adr_i[4] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[4] 0.00108853
 2 *646:wbs_adr_i[4] 0.00195657
@@ -2066,7 +2066,7 @@ wbs_we_i I
 *D_NET *570 0.0165416
 *CONN
 *P wbs_adr_i[5] I
-*I *646:wbs_adr_i[5] I *D SRAM_1024x32
+*I *646:wbs_adr_i[5] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[5] 0.00451107
 2 *646:wbs_adr_i[5] 0.00183396
@@ -2091,7 +2091,7 @@ wbs_we_i I
 *D_NET *571 0.0135397
 *CONN
 *P wbs_adr_i[6] I
-*I *646:wbs_adr_i[6] I *D SRAM_1024x32
+*I *646:wbs_adr_i[6] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[6] 0.00285407
 2 *646:wbs_adr_i[6] 0.0022807
@@ -2112,7 +2112,7 @@ wbs_we_i I
 *D_NET *572 0.0137299
 *CONN
 *P wbs_adr_i[7] I
-*I *646:wbs_adr_i[7] I *D SRAM_1024x32
+*I *646:wbs_adr_i[7] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[7] 0.00402425
 2 *646:wbs_adr_i[7] 0.00165423
@@ -2130,7 +2130,7 @@ wbs_we_i I
 *D_NET *573 0.0126876
 *CONN
 *P wbs_adr_i[8] I
-*I *646:wbs_adr_i[8] I *D SRAM_1024x32
+*I *646:wbs_adr_i[8] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[8] 0.00355363
 2 *646:wbs_adr_i[8] 0.00113759
@@ -2147,7 +2147,7 @@ wbs_we_i I
 *D_NET *574 0.0110929
 *CONN
 *P wbs_adr_i[9] I
-*I *646:wbs_adr_i[9] I *D SRAM_1024x32
+*I *646:wbs_adr_i[9] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_adr_i[9] 0.00111295
 2 *646:wbs_adr_i[9] 0.00423944
@@ -2164,7 +2164,7 @@ wbs_we_i I
 *D_NET *575 0.033199
 *CONN
 *P wbs_cyc_i I
-*I *646:wbs_cyc_i I *D SRAM_1024x32
+*I *646:wbs_cyc_i I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_cyc_i 0.00345902
 2 *646:wbs_cyc_i 0.00343835
@@ -2197,7 +2197,7 @@ wbs_we_i I
 *D_NET *576 0.0311373
 *CONN
 *P wbs_dat_i[0] I
-*I *646:wbs_dat_i[0] I *D SRAM_1024x32
+*I *646:wbs_dat_i[0] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[0] 0.00243431
 2 *646:wbs_dat_i[0] 0.00444127
@@ -2234,7 +2234,7 @@ wbs_we_i I
 *D_NET *577 0.0148708
 *CONN
 *P wbs_dat_i[10] I
-*I *646:wbs_dat_i[10] I *D SRAM_1024x32
+*I *646:wbs_dat_i[10] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[10] 0.00238925
 2 *646:wbs_dat_i[10] 0.00342413
@@ -2255,7 +2255,7 @@ wbs_we_i I
 *D_NET *578 0.0160764
 *CONN
 *P wbs_dat_i[11] I
-*I *646:wbs_dat_i[11] I *D SRAM_1024x32
+*I *646:wbs_dat_i[11] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[11] 0.00267523
 2 *646:wbs_dat_i[11] 0.00372083
@@ -2276,7 +2276,7 @@ wbs_we_i I
 *D_NET *579 0.0180286
 *CONN
 *P wbs_dat_i[12] I
-*I *646:wbs_dat_i[12] I *D SRAM_1024x32
+*I *646:wbs_dat_i[12] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[12] 0.00204273
 2 *646:wbs_dat_i[12] 0.00279224
@@ -2298,7 +2298,7 @@ wbs_we_i I
 *D_NET *580 0.020734
 *CONN
 *P wbs_dat_i[13] I
-*I *646:wbs_dat_i[13] I *D SRAM_1024x32
+*I *646:wbs_dat_i[13] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[13] 0.0030814
 2 *646:wbs_dat_i[13] 0.00417095
@@ -2317,7 +2317,7 @@ wbs_we_i I
 *D_NET *581 0.0257407
 *CONN
 *P wbs_dat_i[14] I
-*I *646:wbs_dat_i[14] I *D SRAM_1024x32
+*I *646:wbs_dat_i[14] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[14] 0.00271279
 2 *646:wbs_dat_i[14] 0.00401463
@@ -2339,7 +2339,7 @@ wbs_we_i I
 *D_NET *582 0.0193221
 *CONN
 *P wbs_dat_i[15] I
-*I *646:wbs_dat_i[15] I *D SRAM_1024x32
+*I *646:wbs_dat_i[15] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[15] 0.00308952
 2 *646:wbs_dat_i[15] 0.00223811
@@ -2361,7 +2361,7 @@ wbs_we_i I
 *D_NET *583 0.0267648
 *CONN
 *P wbs_dat_i[16] I
-*I *646:wbs_dat_i[16] I *D SRAM_1024x32
+*I *646:wbs_dat_i[16] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[16] 0.00137858
 2 *646:wbs_dat_i[16] 0.00156442
@@ -2391,7 +2391,7 @@ wbs_we_i I
 *D_NET *584 0.0288533
 *CONN
 *P wbs_dat_i[17] I
-*I *646:wbs_dat_i[17] I *D SRAM_1024x32
+*I *646:wbs_dat_i[17] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[17] 0.00155994
 2 *646:wbs_dat_i[17] 0.000808732
@@ -2421,7 +2421,7 @@ wbs_we_i I
 *D_NET *585 0.0333896
 *CONN
 *P wbs_dat_i[18] I
-*I *646:wbs_dat_i[18] I *D SRAM_1024x32
+*I *646:wbs_dat_i[18] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[18] 0.00139934
 2 *646:wbs_dat_i[18] 0.00253458
@@ -2447,7 +2447,7 @@ wbs_we_i I
 *D_NET *586 0.0297496
 *CONN
 *P wbs_dat_i[19] I
-*I *646:wbs_dat_i[19] I *D SRAM_1024x32
+*I *646:wbs_dat_i[19] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[19] 0.00284433
 2 *646:wbs_dat_i[19] 0.00184941
@@ -2471,7 +2471,7 @@ wbs_we_i I
 *D_NET *587 0.0309678
 *CONN
 *P wbs_dat_i[1] I
-*I *646:wbs_dat_i[1] I *D SRAM_1024x32
+*I *646:wbs_dat_i[1] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[1] 0.00306923
 2 *646:wbs_dat_i[1] 0.00347107
@@ -2509,7 +2509,7 @@ wbs_we_i I
 *D_NET *588 0.0405825
 *CONN
 *P wbs_dat_i[20] I
-*I *646:wbs_dat_i[20] I *D SRAM_1024x32
+*I *646:wbs_dat_i[20] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[20] 0.00125964
 2 *646:wbs_dat_i[20] 0.00385609
@@ -2531,7 +2531,7 @@ wbs_we_i I
 *D_NET *589 0.035147
 *CONN
 *P wbs_dat_i[21] I
-*I *646:wbs_dat_i[21] I *D SRAM_1024x32
+*I *646:wbs_dat_i[21] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[21] 0.00415868
 2 *646:wbs_dat_i[21] 0.000596035
@@ -2560,7 +2560,7 @@ wbs_we_i I
 *D_NET *590 0.0452601
 *CONN
 *P wbs_dat_i[22] I
-*I *646:wbs_dat_i[22] I *D SRAM_1024x32
+*I *646:wbs_dat_i[22] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[22] 0.00115088
 2 *646:wbs_dat_i[22] 0.00399093
@@ -2585,7 +2585,7 @@ wbs_we_i I
 *D_NET *591 0.0395252
 *CONN
 *P wbs_dat_i[23] I
-*I *646:wbs_dat_i[23] I *D SRAM_1024x32
+*I *646:wbs_dat_i[23] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[23] 0.00149094
 2 *646:wbs_dat_i[23] 0.00385745
@@ -2609,7 +2609,7 @@ wbs_we_i I
 *D_NET *592 0.0405367
 *CONN
 *P wbs_dat_i[24] I
-*I *646:wbs_dat_i[24] I *D SRAM_1024x32
+*I *646:wbs_dat_i[24] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[24] 0.00326908
 2 *646:wbs_dat_i[24] 0.00166583
@@ -2630,7 +2630,7 @@ wbs_we_i I
 *D_NET *593 0.0422556
 *CONN
 *P wbs_dat_i[25] I
-*I *646:wbs_dat_i[25] I *D SRAM_1024x32
+*I *646:wbs_dat_i[25] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[25] 0.00334756
 2 *646:wbs_dat_i[25] 0.00176605
@@ -2653,7 +2653,7 @@ wbs_we_i I
 *D_NET *594 0.0443419
 *CONN
 *P wbs_dat_i[26] I
-*I *646:wbs_dat_i[26] I *D SRAM_1024x32
+*I *646:wbs_dat_i[26] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[26] 0.00298531
 2 *646:wbs_dat_i[26] 0.00235671
@@ -2677,7 +2677,7 @@ wbs_we_i I
 *D_NET *595 0.0421015
 *CONN
 *P wbs_dat_i[27] I
-*I *646:wbs_dat_i[27] I *D SRAM_1024x32
+*I *646:wbs_dat_i[27] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[27] 0.00140645
 2 *646:wbs_dat_i[27] 0.00396126
@@ -2703,7 +2703,7 @@ wbs_we_i I
 *D_NET *596 0.0402058
 *CONN
 *P wbs_dat_i[28] I
-*I *646:wbs_dat_i[28] I *D SRAM_1024x32
+*I *646:wbs_dat_i[28] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[28] 0.00387849
 2 *646:wbs_dat_i[28] 0.00137043
@@ -2725,7 +2725,7 @@ wbs_we_i I
 *D_NET *597 0.0600719
 *CONN
 *P wbs_dat_i[29] I
-*I *646:wbs_dat_i[29] I *D SRAM_1024x32
+*I *646:wbs_dat_i[29] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[29] 0.000681881
 2 *646:wbs_dat_i[29] 0.00481125
@@ -2749,7 +2749,7 @@ wbs_we_i I
 *D_NET *598 0.0210113
 *CONN
 *P wbs_dat_i[2] I
-*I *646:wbs_dat_i[2] I *D SRAM_1024x32
+*I *646:wbs_dat_i[2] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[2] 0.00300122
 2 *646:wbs_dat_i[2] 0.00457494
@@ -2774,7 +2774,7 @@ wbs_we_i I
 *D_NET *599 0.066655
 *CONN
 *P wbs_dat_i[30] I
-*I *646:wbs_dat_i[30] I *D SRAM_1024x32
+*I *646:wbs_dat_i[30] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[30] 0.000778322
 2 *646:wbs_dat_i[30] 0.00416936
@@ -2798,7 +2798,7 @@ wbs_we_i I
 *D_NET *600 0.0695755
 *CONN
 *P wbs_dat_i[31] I
-*I *646:wbs_dat_i[31] I *D SRAM_1024x32
+*I *646:wbs_dat_i[31] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[31] 0.000728239
 2 *646:wbs_dat_i[31] 0.0045164
@@ -2822,7 +2822,7 @@ wbs_we_i I
 *D_NET *601 0.0249354
 *CONN
 *P wbs_dat_i[3] I
-*I *646:wbs_dat_i[3] I *D SRAM_1024x32
+*I *646:wbs_dat_i[3] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[3] 0.0035403
 2 *646:wbs_dat_i[3] 0.00264731
@@ -2850,7 +2850,7 @@ wbs_we_i I
 *D_NET *602 0.019702
 *CONN
 *P wbs_dat_i[4] I
-*I *646:wbs_dat_i[4] I *D SRAM_1024x32
+*I *646:wbs_dat_i[4] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[4] 0.00230589
 2 *646:wbs_dat_i[4] 0.00245159
@@ -2871,7 +2871,7 @@ wbs_we_i I
 *D_NET *603 0.0168227
 *CONN
 *P wbs_dat_i[5] I
-*I *646:wbs_dat_i[5] I *D SRAM_1024x32
+*I *646:wbs_dat_i[5] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[5] 0.00287946
 2 *646:wbs_dat_i[5] 0.00142494
@@ -2892,7 +2892,7 @@ wbs_we_i I
 *D_NET *604 0.0158921
 *CONN
 *P wbs_dat_i[6] I
-*I *646:wbs_dat_i[6] I *D SRAM_1024x32
+*I *646:wbs_dat_i[6] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[6] 0.00092573
 2 *646:wbs_dat_i[6] 0.0016021
@@ -2916,7 +2916,7 @@ wbs_we_i I
 *D_NET *605 0.0131321
 *CONN
 *P wbs_dat_i[7] I
-*I *646:wbs_dat_i[7] I *D SRAM_1024x32
+*I *646:wbs_dat_i[7] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[7] 0.00296151
 2 *646:wbs_dat_i[7] 0.0018341
@@ -2936,7 +2936,7 @@ wbs_we_i I
 *D_NET *606 0.010934
 *CONN
 *P wbs_dat_i[8] I
-*I *646:wbs_dat_i[8] I *D SRAM_1024x32
+*I *646:wbs_dat_i[8] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[8] 0.00489816
 2 *646:wbs_dat_i[8] 6.6349e-05
@@ -2950,7 +2950,7 @@ wbs_we_i I
 *D_NET *607 0.0116535
 *CONN
 *P wbs_dat_i[9] I
-*I *646:wbs_dat_i[9] I *D SRAM_1024x32
+*I *646:wbs_dat_i[9] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_i[9] 0.00135362
 2 *646:wbs_dat_i[9] 0.00427905
@@ -2966,7 +2966,7 @@ wbs_we_i I
 *D_NET *608 0.0332447
 *CONN
 *P wbs_dat_o[0] O
-*I *646:wbs_dat_o[0] O *D SRAM_1024x32
+*I *646:wbs_dat_o[0] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[0] 0.00450046
 2 *646:wbs_dat_o[0] 0.00257823
@@ -2985,7 +2985,7 @@ wbs_we_i I
 *D_NET *609 0.0142296
 *CONN
 *P wbs_dat_o[10] O
-*I *646:wbs_dat_o[10] O *D SRAM_1024x32
+*I *646:wbs_dat_o[10] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[10] 0.00180956
 2 *646:wbs_dat_o[10] 0.00258548
@@ -3006,7 +3006,7 @@ wbs_we_i I
 *D_NET *610 0.0193775
 *CONN
 *P wbs_dat_o[11] O
-*I *646:wbs_dat_o[11] O *D SRAM_1024x32
+*I *646:wbs_dat_o[11] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[11] 0.0012165
 2 *646:wbs_dat_o[11] 0.00371119
@@ -3028,7 +3028,7 @@ wbs_we_i I
 *D_NET *611 0.0203398
 *CONN
 *P wbs_dat_o[12] O
-*I *646:wbs_dat_o[12] O *D SRAM_1024x32
+*I *646:wbs_dat_o[12] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[12] 0.00146868
 2 *646:wbs_dat_o[12] 0.00380607
@@ -3052,7 +3052,7 @@ wbs_we_i I
 *D_NET *612 0.0201703
 *CONN
 *P wbs_dat_o[13] O
-*I *646:wbs_dat_o[13] O *D SRAM_1024x32
+*I *646:wbs_dat_o[13] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[13] 0.000786617
 2 *646:wbs_dat_o[13] 0.00456735
@@ -3074,7 +3074,7 @@ wbs_we_i I
 *D_NET *613 0.0214528
 *CONN
 *P wbs_dat_o[14] O
-*I *646:wbs_dat_o[14] O *D SRAM_1024x32
+*I *646:wbs_dat_o[14] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[14] 0.000742448
 2 *646:wbs_dat_o[14] 0.00449755
@@ -3096,7 +3096,7 @@ wbs_we_i I
 *D_NET *614 0.0291032
 *CONN
 *P wbs_dat_o[15] O
-*I *646:wbs_dat_o[15] O *D SRAM_1024x32
+*I *646:wbs_dat_o[15] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[15] 0.00301185
 2 *646:wbs_dat_o[15] 0.00435131
@@ -3121,7 +3121,7 @@ wbs_we_i I
 *D_NET *615 0.025876
 *CONN
 *P wbs_dat_o[16] O
-*I *646:wbs_dat_o[16] O *D SRAM_1024x32
+*I *646:wbs_dat_o[16] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[16] 0.00385418
 2 *646:wbs_dat_o[16] 0.00432887
@@ -3139,7 +3139,7 @@ wbs_we_i I
 *D_NET *616 0.0291109
 *CONN
 *P wbs_dat_o[17] O
-*I *646:wbs_dat_o[17] O *D SRAM_1024x32
+*I *646:wbs_dat_o[17] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[17] 0.0011486
 2 *646:wbs_dat_o[17] 0.00337523
@@ -3170,7 +3170,7 @@ wbs_we_i I
 *D_NET *617 0.0338137
 *CONN
 *P wbs_dat_o[18] O
-*I *646:wbs_dat_o[18] O *D SRAM_1024x32
+*I *646:wbs_dat_o[18] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[18] 0.000652744
 2 *646:wbs_dat_o[18] 0.0046294
@@ -3195,7 +3195,7 @@ wbs_we_i I
 *D_NET *618 0.038259
 *CONN
 *P wbs_dat_o[19] O
-*I *646:wbs_dat_o[19] O *D SRAM_1024x32
+*I *646:wbs_dat_o[19] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[19] 0.00134406
 2 *646:wbs_dat_o[19] 0.00408581
@@ -3218,7 +3218,7 @@ wbs_we_i I
 *D_NET *619 0.0286248
 *CONN
 *P wbs_dat_o[1] O
-*I *646:wbs_dat_o[1] O *D SRAM_1024x32
+*I *646:wbs_dat_o[1] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[1] 0.00460446
 2 *646:wbs_dat_o[1] 0.00259551
@@ -3236,7 +3236,7 @@ wbs_we_i I
 *D_NET *620 0.0341854
 *CONN
 *P wbs_dat_o[20] O
-*I *646:wbs_dat_o[20] O *D SRAM_1024x32
+*I *646:wbs_dat_o[20] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[20] 0.000982927
 2 *646:wbs_dat_o[20] 0.00441426
@@ -3260,7 +3260,7 @@ wbs_we_i I
 *D_NET *621 0.0460742
 *CONN
 *P wbs_dat_o[21] O
-*I *646:wbs_dat_o[21] O *D SRAM_1024x32
+*I *646:wbs_dat_o[21] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[21] 0.000933211
 2 *646:wbs_dat_o[21] 0.0046028
@@ -3282,7 +3282,7 @@ wbs_we_i I
 *D_NET *622 0.0511628
 *CONN
 *P wbs_dat_o[22] O
-*I *646:wbs_dat_o[22] O *D SRAM_1024x32
+*I *646:wbs_dat_o[22] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[22] 0.000871872
 2 *646:wbs_dat_o[22] 0.00434271
@@ -3308,7 +3308,7 @@ wbs_we_i I
 *D_NET *623 0.0317561
 *CONN
 *P wbs_dat_o[23] O
-*I *646:wbs_dat_o[23] O *D SRAM_1024x32
+*I *646:wbs_dat_o[23] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[23] 0.00114369
 2 *646:wbs_dat_o[23] 0.00428664
@@ -3329,7 +3329,7 @@ wbs_we_i I
 *D_NET *624 0.0560775
 *CONN
 *P wbs_dat_o[24] O
-*I *646:wbs_dat_o[24] O *D SRAM_1024x32
+*I *646:wbs_dat_o[24] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[24] 0.000810532
 2 *646:wbs_dat_o[24] 0.00463544
@@ -3356,7 +3356,7 @@ wbs_we_i I
 *D_NET *625 0.0420037
 *CONN
 *P wbs_dat_o[25] O
-*I *646:wbs_dat_o[25] O *D SRAM_1024x32
+*I *646:wbs_dat_o[25] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[25] 0.000902757
 2 *646:wbs_dat_o[25] 0.00456825
@@ -3380,7 +3380,7 @@ wbs_we_i I
 *D_NET *626 0.0544115
 *CONN
 *P wbs_dat_o[26] O
-*I *646:wbs_dat_o[26] O *D SRAM_1024x32
+*I *646:wbs_dat_o[26] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[26] 0.000877716
 2 *646:wbs_dat_o[26] 0.0046011
@@ -3404,7 +3404,7 @@ wbs_we_i I
 *D_NET *627 0.0663135
 *CONN
 *P wbs_dat_o[27] O
-*I *646:wbs_dat_o[27] O *D SRAM_1024x32
+*I *646:wbs_dat_o[27] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[27] 0.000749193
 2 *646:wbs_dat_o[27] 0.00445754
@@ -3427,7 +3427,7 @@ wbs_we_i I
 *D_NET *628 0.0593006
 *CONN
 *P wbs_dat_o[28] O
-*I *646:wbs_dat_o[28] O *D SRAM_1024x32
+*I *646:wbs_dat_o[28] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[28] 0.000860152
 2 *646:wbs_dat_o[28] 0.00443621
@@ -3452,7 +3452,7 @@ wbs_we_i I
 *D_NET *629 0.0625027
 *CONN
 *P wbs_dat_o[29] O
-*I *646:wbs_dat_o[29] O *D SRAM_1024x32
+*I *646:wbs_dat_o[29] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[29] 0.000823159
 2 *646:wbs_dat_o[29] 0.00469824
@@ -3475,7 +3475,7 @@ wbs_we_i I
 *D_NET *630 0.0262237
 *CONN
 *P wbs_dat_o[2] O
-*I *646:wbs_dat_o[2] O *D SRAM_1024x32
+*I *646:wbs_dat_o[2] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[2] 0.00467786
 2 *646:wbs_dat_o[2] 0.00199453
@@ -3492,7 +3492,7 @@ wbs_we_i I
 *D_NET *631 0.0664464
 *CONN
 *P wbs_dat_o[30] O
-*I *646:wbs_dat_o[30] O *D SRAM_1024x32
+*I *646:wbs_dat_o[30] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[30] 0.000771318
 2 *646:wbs_dat_o[30] 0.00476612
@@ -3517,7 +3517,7 @@ wbs_we_i I
 *D_NET *632 0.0574258
 *CONN
 *P wbs_dat_o[31] O
-*I *646:wbs_dat_o[31] O *D SRAM_1024x32
+*I *646:wbs_dat_o[31] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[31] 0.000719477
 2 *646:wbs_dat_o[31] 0.00491203
@@ -3539,7 +3539,7 @@ wbs_we_i I
 *D_NET *633 0.0225071
 *CONN
 *P wbs_dat_o[3] O
-*I *646:wbs_dat_o[3] O *D SRAM_1024x32
+*I *646:wbs_dat_o[3] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[3] 0.0046127
 2 *646:wbs_dat_o[3] 0.00214932
@@ -3560,7 +3560,7 @@ wbs_we_i I
 *D_NET *634 0.0219216
 *CONN
 *P wbs_dat_o[4] O
-*I *646:wbs_dat_o[4] O *D SRAM_1024x32
+*I *646:wbs_dat_o[4] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[4] 0.0024163
 2 *646:wbs_dat_o[4] 0.00146497
@@ -3584,7 +3584,7 @@ wbs_we_i I
 *D_NET *635 0.0187061
 *CONN
 *P wbs_dat_o[5] O
-*I *646:wbs_dat_o[5] O *D SRAM_1024x32
+*I *646:wbs_dat_o[5] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[5] 0.00268328
 2 *646:wbs_dat_o[5] 0.00266739
@@ -3605,7 +3605,7 @@ wbs_we_i I
 *D_NET *636 0.0127284
 *CONN
 *P wbs_dat_o[6] O
-*I *646:wbs_dat_o[6] O *D SRAM_1024x32
+*I *646:wbs_dat_o[6] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[6] 0.00191932
 2 *646:wbs_dat_o[6] 0.00262821
@@ -3625,7 +3625,7 @@ wbs_we_i I
 *D_NET *637 0.0117456
 *CONN
 *P wbs_dat_o[7] O
-*I *646:wbs_dat_o[7] O *D SRAM_1024x32
+*I *646:wbs_dat_o[7] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[7] 0.00321558
 2 *646:wbs_dat_o[7] 0.00150549
@@ -3643,7 +3643,7 @@ wbs_we_i I
 *D_NET *638 0.0105009
 *CONN
 *P wbs_dat_o[8] O
-*I *646:wbs_dat_o[8] O *D SRAM_1024x32
+*I *646:wbs_dat_o[8] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[8] 6.5784e-05
 2 *646:wbs_dat_o[8] 0.0030199
@@ -3660,7 +3660,7 @@ wbs_we_i I
 *D_NET *639 0.0125035
 *CONN
 *P wbs_dat_o[9] O
-*I *646:wbs_dat_o[9] O *D SRAM_1024x32
+*I *646:wbs_dat_o[9] O *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_dat_o[9] 0.00182271
 2 *646:wbs_dat_o[9] 0.00386975
@@ -3676,7 +3676,7 @@ wbs_we_i I
 *D_NET *640 0.0318626
 *CONN
 *P wbs_sel_i[0] I
-*I *646:wbs_sel_i[0] I *D SRAM_1024x32
+*I *646:wbs_sel_i[0] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_sel_i[0] 0.00454267
 2 *646:wbs_sel_i[0] 0.00273068
@@ -3694,7 +3694,7 @@ wbs_we_i I
 *D_NET *641 0.0276714
 *CONN
 *P wbs_sel_i[1] I
-*I *646:wbs_sel_i[1] I *D SRAM_1024x32
+*I *646:wbs_sel_i[1] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_sel_i[1] 0.0022303
 2 *646:wbs_sel_i[1] 0.00438583
@@ -3728,7 +3728,7 @@ wbs_we_i I
 *D_NET *642 0.0220489
 *CONN
 *P wbs_sel_i[2] I
-*I *646:wbs_sel_i[2] I *D SRAM_1024x32
+*I *646:wbs_sel_i[2] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_sel_i[2] 0.00472007
 2 *646:wbs_sel_i[2] 0.00304749
@@ -3745,7 +3745,7 @@ wbs_we_i I
 *D_NET *643 0.0194456
 *CONN
 *P wbs_sel_i[3] I
-*I *646:wbs_sel_i[3] I *D SRAM_1024x32
+*I *646:wbs_sel_i[3] I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_sel_i[3] 0.00331768
 2 *646:wbs_sel_i[3] 0.00200188
@@ -3767,7 +3767,7 @@ wbs_we_i I
 *D_NET *644 0.032846
 *CONN
 *P wbs_stb_i I
-*I *646:wbs_stb_i I *D SRAM_1024x32
+*I *646:wbs_stb_i I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_stb_i 0.00236828
 2 *646:wbs_stb_i 0.00345428
@@ -3804,7 +3804,7 @@ wbs_we_i I
 *D_NET *645 0.0297909
 *CONN
 *P wbs_we_i I
-*I *646:wbs_we_i I *D SRAM_1024x32
+*I *646:wbs_we_i I *D SRAM_1024x32_wb_wrapper
 *CAP
 1 wbs_we_i 0.00443211
 2 *646:wbs_we_i 0.000781883

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1715770871
+timestamp 1721125398
 << metal1 >>
 rect 63310 4768 63316 4820
 rect 63368 4808 63374 4820
@@ -54352,7 +54352,7 @@ rect 568422 -7622 592062 -7386
 rect 592298 -7622 592382 -7386
 rect 592618 -7622 592650 -7386
 rect -8726 -7654 592650 -7622
-use SRAM_1024x32  mprj
+use SRAM_1024x32_wb_wrapper  mprj
 timestamp 0
 transform 1 0 3012 0 1 23000
 box 964 0 75028 87000

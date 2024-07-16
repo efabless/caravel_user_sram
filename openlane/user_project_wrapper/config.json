@@ -12,16 +12,16 @@
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/gl/SRAM_1024x32.v"
+        "dir::../../verilog/gl/SRAM_1024x32_wb_wrapper.v"
     ],
-    "EXTRA_LEFS": "dir::../../lef/SRAM_1024x32.lef",
-    "EXTRA_GDS_FILES": "dir::../../gds/SRAM_1024x32.gds",
-    "EXTRA_LIBS": "dir::../../lib/SRAM_1024x32.lib",
+    "EXTRA_LEFS": "dir::../../lef/SRAM_1024x32_wb_wrapper.lef",
+    "EXTRA_GDS_FILES": "dir::../../gds/SRAM_1024x32_wb_wrapper.gds",
+    "EXTRA_LIBS": "dir::../../lib/SRAM_1024x32_wb_wrapper.lib",
     "EXTRA_SPEFS": [
-        "SRAM_1024x32",
-        "dir::../../spef/multicorner/SRAM_1024x32.min.spef",
-        "dir::../../spef/multicorner/SRAM_1024x32.nom.spef",
-        "dir::../../spef/multicorner/SRAM_1024x32.max.spef"
+        "SRAM_1024x32_wb_wrapper",
+        "dir::../../spef/multicorner/SRAM_1024x32_wb_wrapper.min.spef",
+        "dir::../../spef/multicorner/SRAM_1024x32_wb_wrapper.nom.spef",
+        "dir::../../spef/multicorner/SRAM_1024x32_wb_wrapper.max.spef"
     ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
