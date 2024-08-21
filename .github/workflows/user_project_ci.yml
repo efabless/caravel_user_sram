@@ -187,6 +187,11 @@ jobs:
           sudo chown -R $USER:$USER ${{ env.CARAVEL_ROOT }}
           tar -xf /tmp/caravel.tar -C $CARAVEL_ROOT .
 
+      - name: Insall SRAM IP
+        run: |
+          pip install ipmgr
+          ipm install EF_SRAM_1024x32
+
       - name: Harden using Openlane
         run: |
           python3 $GITHUB_WORKSPACE/.github/scripts/get_designs.py --design $GITHUB_WORKSPACE
