@@ -8,7 +8,7 @@
 		"*__fill_*",
 		"*__fakediode_*",
 		"*__tapvpwrvgnd_*",
-		"SRAM_1024x32_wb_wrapper"
+		"SRAM_1024x32"
 	],
 	"LVS_FLATTEN": [
 		""
