@@ -34,8 +34,9 @@ ipm install-dep
 make SRAM_1024x32
 ```
 
-For more information on how to use it, please visit this [knowledgebase article](https://info.efabless.com/knowledge-base/how-to-use-efabless-sram). For more information about SRAM IP, please visit the [SRAM catalog entry](https://platform.efabless.com/design_catalog/ip_block/40)
 6. Harden the `user_project_wrapper`
 ```
 make user_project_wrapper
 ```
+
+For more information on how to use it, please visit this [knowledgebase article](https://info.efabless.com/knowledge-base/how-to-use-efabless-sram). For more information about SRAM IP, please visit the [SRAM catalog entry](https://platform.efabless.com/design_catalog/ip_block/40)
