@@ -7,7 +7,8 @@
 	"EXTRACT_ABSTRACT": [
 		"*__fill_*",
 		"*__fakediode_*",
-		"*__tapvpwrvgnd_*"
+		"*__tapvpwrvgnd_*",
+		"SRAM_1024x32_wb_wrapper"
 	],
 	"LVS_FLATTEN": [
 		""
