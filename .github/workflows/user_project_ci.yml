@@ -92,7 +92,7 @@ jobs:
           fi
 
       - name: Download caravel Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: caravel-tarball
           path: /tmp
@@ -151,7 +151,7 @@ jobs:
           echo "MPW_TAG=main" >> $GITHUB_ENV
 
       - name: Download PDK Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: pdk-tarball
           path: /tmp
@@ -163,7 +163,7 @@ jobs:
           tar -xf /tmp/pdk.tar -C $PDK_ROOT .
 
       # - name: Download openlane Tarball
-      #   uses: actions/download-artifact@v2
+      #   uses: actions/download-artifact@v4.1.7
       #   with:
       #     name: openlane-tarball
       #     path: /tmp
@@ -175,7 +175,7 @@ jobs:
       #     tar -xf /tmp/openlane.tar -C $OPENLANE_ROOT .
 
       - name: Download caravel Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: caravel-tarball
           path: /tmp
@@ -254,7 +254,7 @@ jobs:
   #         echo "MPW_TAG=main" >> $GITHUB_ENV
 
   #     - name: Download PDK Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: pdk-tarball
   #         path: /tmp
@@ -266,7 +266,7 @@ jobs:
   #         tar -xf /tmp/pdk.tar -C $PDK_ROOT .
       
   #     - name: Download caravel Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: caravel-tarball
   #         path: /tmp
@@ -278,7 +278,7 @@ jobs:
   #         tar -xf /tmp/caravel.tar -C $CARAVEL_ROOT .
       
   #     - name: Download mgmt_core_wrapper Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: mgmt_core_wrapper-tarball
   #         path: /tmp
@@ -329,7 +329,7 @@ jobs:
           echo "MPW_TAG=main" >> $GITHUB_ENV
 
       - name: Download PDK Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: pdk-tarball
           path: /tmp
@@ -341,7 +341,7 @@ jobs:
           tar -xf /tmp/pdk.tar -C $PDK_ROOT .
 
       - name: Download precheck Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: precheck-tarball
           path: /tmp
@@ -353,7 +353,7 @@ jobs:
           tar -xf /tmp/precheck.tar -C $PRECHECK_ROOT .
 
       - name: Download Design_${{ matrix.pdk }} Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: design_${{ matrix.pdk }}-tarball
           path: /tmp
@@ -407,7 +407,7 @@ jobs:
   #         echo "MPW_TAG=main" >> $GITHUB_ENV
 
   #     - name: Download PDK Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: pdk-tarball
   #         path: /tmp
@@ -419,7 +419,7 @@ jobs:
   #         tar -xf /tmp/pdk.tar -C $PDK_ROOT .
 
   #     - name: Download timing-scripts Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: timing-scripts-tarball
   #         path: /tmp
@@ -431,7 +431,7 @@ jobs:
   #         tar -xf /tmp/timing-scripts.tar -C $TIMING_ROOT .
 
   #     - name: Download Design_${{ matrix.pdk }} Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: design_${{ matrix.pdk }}-tarball
   #         path: /tmp
@@ -443,7 +443,7 @@ jobs:
   #         tar -xf /tmp/design_${{ matrix.pdk }}.tar -C $GITHUB_WORKSPACE .
 
   #     - name: Download Caravel Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: caravel-tarball
   #         path: /tmp
@@ -455,7 +455,7 @@ jobs:
   #         tar -xf /tmp/caravel.tar -C ${{ env.CARAVEL_ROOT }} .
 
   #     - name: Download mgmt_core_wrapper Tarball
-  #       uses: actions/download-artifact@v2
+  #       uses: actions/download-artifact@v4.1.7
   #       with:
   #         name: mgmt_core_wrapper-tarball
   #         path: /tmp
@@ -518,7 +518,7 @@ jobs:
   # #         echo "MPW_TAG=main" >> $GITHUB_ENV
 
   # #     - name: Download PDK Tarball
-  # #       uses: actions/download-artifact@v2
+  # #       uses: actions/download-artifact@v4.1.7
   # #       with:
   # #         name: pdk-tarball
   # #         path: /tmp
@@ -530,7 +530,7 @@ jobs:
   # #         tar -xf /tmp/pdk.tar -C $PDK_ROOT .
       
   # #     - name: Download caravel Tarball
-  # #       uses: actions/download-artifact@v2
+  # #       uses: actions/download-artifact@v4.1.7
   # #       with:
   # #         name: caravel-tarball
   # #         path: /tmp
@@ -542,7 +542,7 @@ jobs:
   # #         tar -xf /tmp/caravel.tar -C $CARAVEL_ROOT .
       
   # #     - name: Download mgmt_core_wrapper Tarball
-  # #       uses: actions/download-artifact@v2
+  # #       uses: actions/download-artifact@v4.1.7
   # #       with:
   # #         name: mgmt_core_wrapper-tarball
   # #         path: /tmp
@@ -554,7 +554,7 @@ jobs:
   # #         tar -xf /tmp/mgmt_core_wrapper.tar -C $MCW_ROOT .
 
   # #     # - name: Download Design Tarball
-  # #     #   uses: actions/download-artifact@v2
+  # #     #   uses: actions/download-artifact@v4.1.7
   # #     #   with:
   # #     #     name: design-tarball
   # #     #     path: /tmp
