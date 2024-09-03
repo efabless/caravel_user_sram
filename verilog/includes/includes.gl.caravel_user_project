@@ -15,8 +15,8 @@
 
 # Caravel user project includes	     
 -v $(USER_PROJECT_VERILOG)/gl/user_project_wrapper.v    
--v $(USER_PROJECT_VERILOG)/gl/SRAM_1024x32.v
--v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32_wrapper.v
+-v $(USER_PROJECT_VERILOG)/gl/SRAM_1024x32_wb_wrapper.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32.v
 -v $(USER_PROJECT_VERILOG)/../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32_stub.v
 
 -v $(USER_PROJECT_VERILOG)/gl/caravel_core.v
@@ -25,5 +25,5 @@
 
 -v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0403.v     
 -v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0801.v     
--v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1808.v 
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1809.v 
 -v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1803.v

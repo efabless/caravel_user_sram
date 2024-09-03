@@ -1,8 +1,8 @@
-CARAVEL_ROOT: /home/marwan/caravel_user_sram/caravel
-MCW_ROOT: /home/marwan/caravel_user_sram/mgmt_core_wrapper
+CARAVEL_ROOT: /Users/marwan/work/caravel_user_sram/caravel
+MCW_ROOT: /Users/marwan/work/caravel_user_sram/mgmt_core_wrapper
 PDK: sky130A
-PDK_ROOT: /home/marwan/caravel_user_sram/dependencies/pdks
-USER_PROJECT_ROOT: /home/marwan/caravel_user_sram
+PDK_ROOT: /Users/marwan/work/caravel_user_sram/dependencies/pdks
+USER_PROJECT_ROOT: /Users/marwan/work/caravel_user_sram
 caravan: false
 clk: 25
 emailto:
