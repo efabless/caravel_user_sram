@@ -27,7 +27,7 @@ pip install .
 4. Install the SRAM IP
 ```
 cd $HOME/caravel_user_sram
-ipm install-dep
+ipm install EF_SRAM_1024x32
 ```
 5. Harden the SRAM macro
 ```
