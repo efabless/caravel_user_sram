@@ -27,6 +27,7 @@ jobs:
       - name: Setup Caravel environment
         run: |
           pip install click
+          pip install yaml
           CARAVEL_LITE=0 make setup
       
       - name: Install IP dependencies if any
