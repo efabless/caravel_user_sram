@@ -68,7 +68,14 @@ jobs:
 
       - name: Run precheck
         run: |
-          make run-precheck
+          export PDK_ROOT=$GITHUB_WORKSPACE/dependencies/pdk
+          export INPUT_DIRECTORY=$GITHUB_WORKSPACE
+          export PRECHECK_ROOT=~/mpw_precheck
+          export OUTPUT_DIRECTORY=$INPUT_DIRECTORY/mpw_precheck_result
+          export OUTPUT=$OUTPUT_DIRECTORY/logs/precheck.log
+          export PDKPATH=$PDK_ROOT/sky130A
+
+          docker run -v "$PRECHECK_ROOT":"$PRECHECK_ROOT" -v "$INPUT_DIRECTORY":"$INPUT_DIRECTORY" -v "${{ env.PDK_ROOT }}":"${{ env.PDK_ROOT }}" -e INPUT_DIRECTORY="$INPUT_DIRECTORY" -e PDK_ROOT="${{ env.PDK_ROOT }}" -e PDKPATH="${{ env.PDKPATH }}" -u $(id -u "$USER"):$(id -g "$USER") efabless/mpw_precheck:latest bash -c "cd $PRECHECK_ROOT; python3 mpw_precheck.py --input_directory $INPUT_DIRECTORY --pdk_path ${{ env.PDKPATH }} --output_directory $OUTPUT_DIRECTORY
 
       - name: Run STA
         run: |
