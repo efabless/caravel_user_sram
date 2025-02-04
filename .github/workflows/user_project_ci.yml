@@ -29,42 +29,42 @@ jobs:
           pip install ipmgr
           ipm install-dep
       
-      # - name: Run RTL verification
-      #   run: |
-      #     cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag rtl_verification
-      #     cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/rtl_verification/runs.log")
-      #     if ! [[ $cnt ]]; then cnt=0; fi
-      #     if [[ $cnt -eq 1 ]]; then exit 0; fi
-      #     exit 2
+      - name: Run RTL verification
+        run: |
+          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag rtl_verification
+          cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/rtl_verification/runs.log")
+          if ! [[ $cnt ]]; then cnt=0; fi
+          if [[ $cnt -eq 1 ]]; then exit 0; fi
+          exit 2
 
-      # - name: Harden Macros
-      #   run: |
-      #     python3 $GITHUB_WORKSPACE/.github/scripts/get_designs.py --design $GITHUB_WORKSPACE
-      #     for word in $(cat harden_sequence.txt); do
-      #       echo "CURRENT_DESIGN=${word}" >> $GITHUB_ENV
-      #       make $word
-      #     done
+      - name: Harden Macros
+        run: |
+          python3 $GITHUB_WORKSPACE/.github/scripts/get_designs.py --design $GITHUB_WORKSPACE
+          for word in $(cat harden_sequence.txt); do
+            echo "CURRENT_DESIGN=${word}" >> $GITHUB_ENV
+            make $word
+          done
       
-      # - name: Create reproducible
-      #   if: failure()
-      #   run: tar -cf $GITHUB_WORKSPACE/issue_reproducible.tar -C $GITHUB_WORKSPACE/openlane/${{ env.CURRENT_DESIGN }}/runs/${{ env.CURRENT_DESIGN }}/issue_reproducible .
+      - name: Create reproducible
+        if: failure()
+        run: tar -cf $GITHUB_WORKSPACE/issue_reproducible.tar -C $GITHUB_WORKSPACE/openlane/${{ env.CURRENT_DESIGN }}/runs/${{ env.CURRENT_DESIGN }}/issue_reproducible .
       
-      # - name: upload failure logs
-      #   if: failure()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: openlane-issue-reproducible
-      #     path: |
-      #       $GITHUB_WORKSPACE/issue_reproducible.tar
+      - name: upload failure logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: openlane-issue-reproducible
+          path: |
+            $GITHUB_WORKSPACE/issue_reproducible.tar
 
-      # - name: GL Verification
-      #   run: |
-      #     python3 verilog/dv/add_ram_workaround.py --gl verilog/gl/SRAM_1024x32_wb_wrapper.v 
-      #     cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag gl_verification -sim GL
-      #     cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/gl_verification/runs.log")
-      #     if ! [[ $cnt ]]; then cnt=0; fi
-      #     if [[ $cnt -eq 1 ]]; then exit 0; fi
-      #     exit 2
+      - name: GL Verification
+        run: |
+          python3 verilog/dv/add_ram_workaround.py --gl verilog/gl/SRAM_1024x32_wb_wrapper.v 
+          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag gl_verification -sim GL
+          cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/gl_verification/runs.log")
+          if ! [[ $cnt ]]; then cnt=0; fi
+          if [[ $cnt -eq 1 ]]; then exit 0; fi
+          exit 2
 
       - name: Run precheck
         run: |
