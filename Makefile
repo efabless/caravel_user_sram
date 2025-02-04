@@ -282,6 +282,20 @@ run-precheck: check-pdk check-precheck
 		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
 	fi
 
+.PHONY: run-precheck-ci
+run-precheck-ci:
+	$(eval INPUT_DIRECTORY := $(shell pwd)) \
+	cd $(PRECHECK_ROOT) && \
+	docker run -rm -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+	-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-e PDKPATH=$(PDKPATH) \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)";
+
 
 BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
 LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
