@@ -25,7 +25,9 @@ jobs:
           python-version: '3.x' # Or specify a specific version
 
       - name: Setup Caravel environment
-        run: CARAVEL_LITE=0 make setup
+        run: |
+          pip install click
+          CARAVEL_LITE=0 make setup
       
       - name: Install IP dependencies if any
         run: |
@@ -34,7 +36,7 @@ jobs:
       
       - name: Run RTL verification
         run: |
-          make cocotb-verify-all-rtl
+          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag rtl_verification
           cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/rtl_verification/runs.log")
           if ! [[ $cnt ]]; then cnt=0; fi
           if [[ $cnt -eq 1 ]]; then exit 0; fi
@@ -63,7 +65,7 @@ jobs:
       - name: GL Verification
         run: |
           python3 verilog/dv/add_ram_workaround.py --gl verilog/gl/SRAM_1024x32_wb_wrapper.v 
-          make cocotb-verify-all-gl
+          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag gl_verification -sim GL
           cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/gl_verification/runs.log")
           if ! [[ $cnt ]]; then cnt=0; fi
           if [[ $cnt -eq 1 ]]; then exit 0; fi
