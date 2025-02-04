@@ -69,6 +69,18 @@ jobs:
       - name: Run precheck
         run: |
           make run-precheck-ci
+      
+      - name: Create reproducible
+        if: failure()
+        run: tar -cf $GITHUB_WORKSPACE/precheck.tar -C $GITHUB_WORKSPACE/precheck_results .
+      
+      - name: upload failure logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: openlane-issue-reproducible
+          path: |
+            $GITHUB_WORKSPACE/precheck.tar
 
       - name: Run STA
         run: |
