@@ -25,7 +25,7 @@ jobs:
           python-version: '3.x' # Or specify a specific version
 
       - name: Setup Caravel environment
-        run: make setup
+        run: CARAVEL_LITE=0 make setup
       
       - name: Install IP dependencies if any
         run: |
