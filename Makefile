@@ -291,6 +291,9 @@ run-precheck-ci: check-pdk check-precheck enable-lvs-pdk
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
 	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)";
 
+.PHONY: enable-lvs-pdk
+enable-lvs-pdk:
+	$(UPRJ_ROOT)/venv/bin/volare enable $(OPEN_PDKS_COMMIT_LVS)
 
 BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
 LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
