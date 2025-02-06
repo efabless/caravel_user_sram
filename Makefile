@@ -16,6 +16,7 @@
 MAKEFLAGS+=--warn-undefined-variables
 
 export CARAVEL_ROOT?=$(PWD)/caravel
+export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
 export MCW_ROOT?=$(PWD)/mgmt_core_wrapper
 SIM?=RTL
@@ -37,16 +38,16 @@ ifeq ($(ROOTLESS), 1)
 endif
 export OPENLANE_ROOT?=$(PWD)/dependencies/openlane_src
 export PDK_ROOT?=$(PWD)/dependencies/pdks
-export IPM_ROOT?=$(PWD)/dependencies/ipm
 export DISABLE_LVS?=0
 
 export ROOTLESS
 
 ifeq ($(PDK),sky130A)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT?=bdc9412b3e468c102d01b7cf6337be06ec6e9c9a
+	export OPEN_PDKS_COMMIT_LVS?=0fe599b2afb6708d281543108caf8310912f54af
+	export OPEN_PDKS_COMMIT?=0fe599b2afb6708d281543108caf8310912f54af
 	export OPENLANE_TAG?=2024.04.22
-	MPW_TAG ?= mpw-9i
+	MPW_TAG ?= 2024.09.13-1
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -62,9 +63,10 @@ endif
 
 ifeq ($(PDK),sky130B)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
+	export OPEN_PDKS_COMMIT_LVS?=0fe599b2afb6708d281543108caf8310912f54af
+	export OPEN_PDKS_COMMIT?=0fe599b2afb6708d281543108caf8310912f54af
 	export OPENLANE_TAG?=2024.04.22
-	MPW_TAG ?= mpw-9i
+	MPW_TAG ?= 2024.09.13-1
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -231,17 +233,7 @@ update_caravel: check-caravel
 uninstall:
 	rm -rf $(CARAVEL_ROOT)
 
-ipm: check_dependencies
-	if [ -d "$(IPM_ROOT)" ]; then\
-		echo "Deleting exisiting $(IPM_ROOT)" && \
-		rm -rf $(IPM_ROOT) && sleep 2;\
-	fi
-	git clone https://github.com/efabless/ipm.git $(IPM_ROOT)
-	cd $(IPM_ROOT)
-	pip install .
 
-ip: ipm
-	ipm install-dep
 # Install Pre-check
 # Default installs to the user home directory, override by "export PRECHECK_ROOT=<precheck-installation-path>"
 .PHONY: precheck
@@ -255,13 +247,14 @@ precheck:
 	@docker pull efabless/mpw_precheck:latest
 
 .PHONY: run-precheck
-run-precheck: check-pdk check-precheck
+run-precheck: check-pdk check-precheck enable-lvs-pdk
 	@if [ "$$DISABLE_LVS" = "1" ]; then\
 		$(eval INPUT_DIRECTORY := $(shell pwd)) \
 		cd $(PRECHECK_ROOT) && \
 		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-v $(HOME)/.ipm:$(HOME)/.ipm \
 		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
 		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
 		-e PDK_ROOT=$(PDK_ROOT) \
@@ -274,6 +267,7 @@ run-precheck: check-pdk check-precheck
 		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-v $(HOME)/.ipm:$(HOME)/.ipm \
 		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
 		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
 		-e PDK_ROOT=$(PDK_ROOT) \
@@ -282,6 +276,24 @@ run-precheck: check-pdk check-precheck
 		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
 	fi
 
+.PHONY: run-precheck-ci
+run-precheck-ci: check-pdk check-precheck enable-lvs-pdk
+	$(eval INPUT_DIRECTORY := $(shell pwd)) \
+	cd $(PRECHECK_ROOT) && \
+	docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-v $(HOME)/.ipm:$(HOME)/.ipm \
+	-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+	-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-e PDKPATH=$(PDKPATH) \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)";
+
+.PHONY: enable-lvs-pdk
+enable-lvs-pdk:
+	$(UPRJ_ROOT)/venv/bin/volare enable $(OPEN_PDKS_COMMIT_LVS)
 
 BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
 LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
@@ -363,7 +375,7 @@ cocotb-verify-all-rtl:
 	
 .PHONY: cocotb-verify-all-gl
 cocotb-verify-all-gl:
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests_gl.yaml -verbosity quiet)
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests_gl.yaml -sim GL)
 
 $(cocotb-dv-targets-rtl): cocotb-verify-%-rtl: 
 	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -t $*  )
