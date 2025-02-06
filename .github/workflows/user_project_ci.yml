@@ -26,8 +26,9 @@ jobs:
       
       - name: Install IP dependencies if any
         run: |
-          pip install ipmgr
-          ipm install-dep
+          mkdir -p ip
+          cd ip
+          git clone https://github.com/efabless/EF_SRAM_1024x32.git
       
       - name: Run RTL verification
         run: |
